@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD08614C-577E-4059-B397-E9BADA889E1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LKM.My.MyApplication</StartupObject>
+    <RootNamespace>LKM</RootNamespace>
+    <AssemblyName>Micro Finance System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Micro Finance System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Micro Finance System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Custom-Icon-Design-Pretty-Office-11-Coin-us-dollar.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\PT. MSO\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MadMilkman.Ini">
+      <HintPath>..\dll\MadMilkman\MadMilkman.Ini.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\dll\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\New folder\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Ribbon35, Version=3.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Windows.Forms.Ribbon35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="afiliasi.Designer.vb">
+      <DependentUpon>afiliasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="afiliasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="cetak_laporan_transaksi_teller.Designer.vb">
+      <DependentUpon>cetak_laporan_transaksi_teller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_laporan_transaksi_teller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_nominatif_bunga_tabungan.Designer.vb">
+      <DependentUpon>cetak_nominatif_bunga_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_nominatif_bunga_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_transaksi_kas_nonkas.Designer.vb">
+      <DependentUpon>cetak_transaksi_kas_nonkas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_transaksi_kas_nonkas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daftar_nasabah.Designer.vb">
+      <DependentUpon>daftar_nasabah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="daftar_nasabah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\fr_deposito_form.Designer.vb">
+      <DependentUpon>fr_deposito_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\fr_deposito_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\fr_deposito_product.Designer.vb">
+      <DependentUpon>fr_deposito_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\fr_deposito_product.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_data_nasabah.Designer.vb">
+      <DependentUpon>form_data_nasabah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_data_nasabah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_simulasi_kredit.Designer.vb">
+      <DependentUpon>form_simulasi_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_simulasi_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_daftar_nasabah.Designer.vb">
+      <DependentUpon>laporan_daftar_nasabah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_daftar_nasabah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_nominatif_bunga_tabungan.Designer.vb">
+      <DependentUpon>laporan_nominatif_bunga_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_nominatif_bunga_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_rincian_transaksi_kredit2.Designer.vb">
+      <DependentUpon>laporan_rincian_transaksi_kredit2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_rincian_transaksi_kredit2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_transaksi_kas.Designer.vb">
+      <DependentUpon>laporan_transaksi_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_transaksi_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_transaksi_nonkas.Designer.vb">
+      <DependentUpon>laporan_transaksi_nonkas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_transaksi_nonkas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_verbal_kas.Designer.vb">
+      <DependentUpon>laporan_verbal_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_verbal_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="md5.vb" />
+    <Compile Include="module_class_other\module\mdl_function.vb" />
+    <Compile Include="module_class_other\module\mdl_sysvar.vb" />
+    <Compile Include="modul_terbilang.vb" />
+    <Compile Include="obj\agunan_kredit.Designer.vb">
+      <DependentUpon>agunan_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="obj\agunan_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ambil_foto.Designer.vb">
+      <DependentUpon>ambil_foto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ambil_foto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autodebet_angsuran.Designer.vb">
+      <DependentUpon>autodebet_angsuran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="autodebet_angsuran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backup_restore.Designer.vb">
+      <DependentUpon>backup_restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="backup_restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browser_transaksi_tabungan.Designer.vb">
+      <DependentUpon>browser_transaksi_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="browser_transaksi_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browse_angsuran_kredit.Designer.vb">
+      <DependentUpon>browse_angsuran_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="browse_angsuran_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browse_transaksi.Designer.vb">
+      <DependentUpon>browse_transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="browse_transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browse_transaksi_jurnal_kas.Designer.vb">
+      <DependentUpon>browse_transaksi_jurnal_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="browse_transaksi_jurnal_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browse_transaksi_jurnal_non_kas.Designer.vb">
+      <DependentUpon>browse_transaksi_jurnal_non_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="browse_transaksi_jurnal_non_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browse_transaksi_realisasi.Designer.vb">
+      <DependentUpon>browse_transaksi_realisasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="browse_transaksi_realisasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cek_master_nasabah.Designer.vb">
+      <DependentUpon>cek_master_nasabah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cek_master_nasabah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_neraca.Designer.vb">
+      <DependentUpon>cetak_neraca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_neraca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_nominatif_kredit.Designer.vb">
+      <DependentUpon>cetak_nominatif_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_nominatif_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_nominatif_tabungan.Designer.vb">
+      <DependentUpon>cetak_nominatif_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_nominatif_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_rekening_koran.Designer.vb">
+      <DependentUpon>cetak_rekening_koran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_rekening_koran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_rincian_mutasi_saldo.Designer.vb">
+      <DependentUpon>cetak_rincian_mutasi_saldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_rincian_mutasi_saldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_rincian_transaksi_kredit.Designer.vb">
+      <DependentUpon>cetak_rincian_transaksi_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_rincian_transaksi_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetak_rincian_transaksi_tabungan.Designer.vb">
+      <DependentUpon>cetak_rincian_transaksi_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cetak_rincian_transaksi_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coding_koneksi.vb" />
+    <Compile Include="DATASET.Designer.vb">
+      <DependentUpon>DATASET.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DATASET.vb">
+      <DependentUpon>DATASET.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="data_kantor_pusat.Designer.vb">
+      <DependentUpon>data_kantor_pusat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="data_kantor_pusat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_kredit.Designer.vb">
+      <DependentUpon>data_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="data_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_nasabah_perorangan.Designer.vb">
+      <DependentUpon>data_nasabah_perorangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="data_nasabah_perorangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_pelengkap.Designer.vb">
+      <DependentUpon>data_pelengkap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="data_pelengkap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_pengguna.Designer.vb">
+      <DependentUpon>data_pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="data_pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_perkiraan.Designer.vb">
+      <DependentUpon>data_perkiraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="data_perkiraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_tabungan.Designer.vb">
+      <DependentUpon>data_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="data_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_permohonan_kredit.Designer.vb">
+      <DependentUpon>form_permohonan_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_permohonan_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_profil.Designer.vb">
+      <DependentUpon>form_profil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_profil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_rekening_koran.Designer.vb">
+      <DependentUpon>form_rekening_koran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_rekening_koran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ganti_password.Designer.vb">
+      <DependentUpon>ganti_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ganti_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informasi_aplikasi.vb" />
+    <Compile Include="jadual_angsuran.Designer.vb">
+      <DependentUpon>jadual_angsuran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jadual_angsuran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_buku_besar.Designer.vb">
+      <DependentUpon>laporan_buku_besar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_buku_besar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_deret_neraca.Designer.vb">
+      <DependentUpon>laporan_deret_neraca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_deret_neraca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_deret_labarugi.Designer.vb">
+      <DependentUpon>laporan_deret_labarugi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_deret_labarugi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_harian.Designer.vb">
+      <DependentUpon>laporan_harian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_harian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_jadual_angsuran.Designer.vb">
+      <DependentUpon>laporan_jadual_angsuran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_jadual_angsuran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_mutasi.Designer.vb">
+      <DependentUpon>laporan_mutasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_mutasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_nominatif_kredit.Designer.vb">
+      <DependentUpon>laporan_nominatif_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_nominatif_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_nominatif_tabungan.Designer.vb">
+      <DependentUpon>laporan_nominatif_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_nominatif_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_rekening_administrasi.Designer.vb">
+      <DependentUpon>laporan_rekening_administrasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_rekening_administrasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_rekonsiliasi_mutasi.Designer.vb">
+      <DependentUpon>laporan_rekonsiliasi_mutasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_rekonsiliasi_mutasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_rincian_mutasi.Designer.vb">
+      <DependentUpon>laporan_rincian_mutasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_rincian_mutasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_rincian_transaksi_kredit.Designer.vb">
+      <DependentUpon>laporan_rincian_transaksi_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_rincian_transaksi_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_rincian_transaksi_tabungan.Designer.vb">
+      <DependentUpon>laporan_rincian_transaksi_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_rincian_transaksi_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_skontro.Designer.vb">
+      <DependentUpon>laporan_skontro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_skontro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_statement_kredit_model1.Designer.vb">
+      <DependentUpon>laporan_statement_kredit_model1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_statement_kredit_model1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan_statement_kredit_model2.Designer.vb">
+      <DependentUpon>laporan_statement_kredit_model2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan_statement_kredit_model2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_user.Designer.vb">
+      <DependentUpon>log_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="log_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_grup_akses.Designer.vb">
+      <DependentUpon>master_grup_akses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_grup_akses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_nasabah_perorangan.Designer.vb">
+      <DependentUpon>master_nasabah_perorangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_nasabah_perorangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_pengguna.Designer.vb">
+      <DependentUpon>master_pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_perkiraan.Designer.vb">
+      <DependentUpon>master_perkiraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_perkiraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_produk_kredit.Designer.vb">
+      <DependentUpon>master_produk_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_produk_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_produk_tabungan.Designer.vb">
+      <DependentUpon>master_produk_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_produk_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_rekening_kredit.Designer.vb">
+      <DependentUpon>master_rekening_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_rekening_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="master_rekening_tabungan.Designer.vb">
+      <DependentUpon>master_rekening_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="master_rekening_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="module_watermark.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pencarian_kredit.Designer.vb">
+      <DependentUpon>pencarian_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pencarian_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pencarian_kredit_aktif.Designer.vb">
+      <DependentUpon>pencarian_kredit_aktif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pencarian_kredit_aktif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pencarian_master_nasabah.Designer.vb">
+      <DependentUpon>pencarian_master_nasabah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pencarian_master_nasabah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pencarian_master_tabungan.Designer.vb">
+      <DependentUpon>pencarian_master_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pencarian_master_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pencarian_perkiraan.Designer.vb">
+      <DependentUpon>pencarian_perkiraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pencarian_perkiraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pencarian_teller.Designer.vb">
+      <DependentUpon>pencarian_teller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pencarian_teller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pengaturan_perkiraan.Designer.vb">
+      <DependentUpon>pengaturan_perkiraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pengaturan_perkiraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="petugas_pelaporan.Designer.vb">
+      <DependentUpon>petugas_pelaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="petugas_pelaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pindah_afiliasi.Designer.vb">
+      <DependentUpon>pindah_afiliasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pindah_afiliasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proses_bunga_tabungan.Designer.vb">
+      <DependentUpon>proses_bunga_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="proses_bunga_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrasi_buku_tabungan.Designer.vb">
+      <DependentUpon>registrasi_buku_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registrasi_buku_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rekening_kredit.Designer.vb">
+      <DependentUpon>rekening_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rekening_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rekening_tabungan.Designer.vb">
+      <DependentUpon>rekening_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rekening_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="riwayat_produk_tabungan.Designer.vb">
+      <DependentUpon>riwayat_produk_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="riwayat_produk_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_cetakan.Designer.vb">
+      <DependentUpon>setup_cetakan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_cetakan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_grup_pengguna.Designer.vb">
+      <DependentUpon>setup_grup_pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_grup_pengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_instansi.Designer.vb">
+      <DependentUpon>setup_instansi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_instansi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_kolektor.Designer.vb">
+      <DependentUpon>setup_kolektor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_kolektor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_marketing.Designer.vb">
+      <DependentUpon>setup_marketing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_marketing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_menu.Designer.vb">
+      <DependentUpon>setup_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_pegawai.Designer.vb">
+      <DependentUpon>setup_pegawai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_pegawai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_wilayah.Designer.vb">
+      <DependentUpon>setup_wilayah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setup_wilayah.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="simulasi_kredit.Designer.vb">
+      <DependentUpon>simulasi_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="simulasi_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statement_provisi.Designer.vb">
+      <DependentUpon>statement_provisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statement_provisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statement_tabungan.Designer.vb">
+      <DependentUpon>statement_tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statement_tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statement_transaksi.Designer.vb">
+      <DependentUpon>statement_transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statement_transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi _tabungan.Designer.vb">
+      <DependentUpon>transaksi _tabungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksi _tabungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi_angsuran_kredit.Designer.vb">
+      <DependentUpon>transaksi_angsuran_kredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksi_angsuran_kredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi_jurnal_kas.Designer.vb">
+      <DependentUpon>transaksi_jurnal_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksi_jurnal_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi_jurnal_non_kas.Designer.vb">
+      <DependentUpon>transaksi_jurnal_non_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksi_jurnal_non_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi_pencairan.Designer.vb">
+      <DependentUpon>transaksi_pencairan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksi_pencairan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi_verbal_kas.Designer.vb">
+      <DependentUpon>transaksi_verbal_kas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksi_verbal_kas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="afiliasi.resx">
+      <DependentUpon>afiliasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_form_data_nasabah2.rdlc" />
+    <EmbeddedResource Include="cetak_laporan_transaksi_teller.resx">
+      <DependentUpon>cetak_laporan_transaksi_teller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_nominatif_bunga_tabungan.resx">
+      <DependentUpon>cetak_nominatif_bunga_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daftar_nasabah.resx">
+      <DependentUpon>daftar_nasabah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\fr_deposito_form.resx">
+      <DependentUpon>fr_deposito_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\fr_deposito_product.resx">
+      <DependentUpon>fr_deposito_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_data_nasabah.resx">
+      <DependentUpon>form_data_nasabah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_simulasi_kredit.rdlc" />
+    <EmbeddedResource Include="form_simulasi_kredit.resx">
+      <DependentUpon>form_simulasi_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_daftar_nasabah.rdlc" />
+    <EmbeddedResource Include="laporan_daftar_nasabah.resx">
+      <DependentUpon>laporan_daftar_nasabah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_nominatif_bunga_tabungan.resx">
+      <DependentUpon>laporan_nominatif_bunga_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_rincian_transaksi_kredit2.resx">
+      <DependentUpon>laporan_rincian_transaksi_kredit2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_transaksi_kas.rdlc" />
+    <EmbeddedResource Include="laporan_transaksi_kas.resx">
+      <DependentUpon>laporan_transaksi_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_transaksi_nonkas.rdlc" />
+    <EmbeddedResource Include="laporan_transaksi_nonkas.resx">
+      <DependentUpon>laporan_transaksi_nonkas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_verbal_kas.rdlc" />
+    <EmbeddedResource Include="laporan_verbal_kas.resx">
+      <DependentUpon>laporan_verbal_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nominatif_bunga_tabungan.rdlc" />
+    <EmbeddedResource Include="obj\agunan_kredit.resx">
+      <DependentUpon>agunan_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ambil_foto.resx">
+      <DependentUpon>ambil_foto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autodebet_angsuran.resx">
+      <DependentUpon>autodebet_angsuran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="backup_restore.resx">
+      <DependentUpon>backup_restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browser_transaksi_tabungan.resx">
+      <DependentUpon>browser_transaksi_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browse_angsuran_kredit.resx">
+      <DependentUpon>browse_angsuran_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browse_transaksi.resx">
+      <DependentUpon>browse_transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browse_transaksi_jurnal_kas.resx">
+      <DependentUpon>browse_transaksi_jurnal_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browse_transaksi_jurnal_non_kas.resx">
+      <DependentUpon>browse_transaksi_jurnal_non_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browse_transaksi_realisasi.resx">
+      <DependentUpon>browse_transaksi_realisasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cek_master_nasabah.resx">
+      <DependentUpon>cek_master_nasabah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_form_data_nasabah.rdlc" />
+    <EmbeddedResource Include="cetak_neraca.resx">
+      <DependentUpon>cetak_neraca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_nominatif_kredit.resx">
+      <DependentUpon>cetak_nominatif_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_nominatif_tabungan.resx">
+      <DependentUpon>cetak_nominatif_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_rekening_koran.resx">
+      <DependentUpon>cetak_rekening_koran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_rincian_mutasi_saldo.resx">
+      <DependentUpon>cetak_rincian_mutasi_saldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_rincian_transaksi_kredit.resx">
+      <DependentUpon>cetak_rincian_transaksi_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetak_rincian_transaksi_tabungan.resx">
+      <DependentUpon>cetak_rincian_transaksi_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_kantor_pusat.resx">
+      <DependentUpon>data_kantor_pusat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_kredit.resx">
+      <DependentUpon>data_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_nasabah_perorangan.resx">
+      <DependentUpon>data_nasabah_perorangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_pelengkap.resx">
+      <DependentUpon>data_pelengkap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_pengguna.resx">
+      <DependentUpon>data_pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_perkiraan.resx">
+      <DependentUpon>data_perkiraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data_tabungan.resx">
+      <DependentUpon>data_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_permohonan_kredit.resx">
+      <DependentUpon>form_permohonan_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_profil.resx">
+      <DependentUpon>form_profil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_rekening_koran.resx">
+      <DependentUpon>form_rekening_koran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ganti_password.resx">
+      <DependentUpon>ganti_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jadual_angsuran.rdlc" />
+    <EmbeddedResource Include="jadual_angsuran.resx">
+      <DependentUpon>jadual_angsuran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_buku_besar.resx">
+      <DependentUpon>laporan_buku_besar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_deret_harian.rdlc" />
+    <EmbeddedResource Include="laporan_deret_neraca.resx">
+      <DependentUpon>laporan_deret_neraca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_deret_labarugi.resx">
+      <DependentUpon>laporan_deret_labarugi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_deret_labarugi.rdlc" />
+    <EmbeddedResource Include="laporan_harian.rdlc" />
+    <EmbeddedResource Include="laporan_harian.resx">
+      <DependentUpon>laporan_harian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_jadual_angsuran.resx">
+      <DependentUpon>laporan_jadual_angsuran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_mutasi.rdlc" />
+    <EmbeddedResource Include="laporan_mutasi.resx">
+      <DependentUpon>laporan_mutasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_nominatif_kredit.resx">
+      <DependentUpon>laporan_nominatif_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_nominatif_tabungan.resx">
+      <DependentUpon>laporan_nominatif_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_rekening_administrasi.resx">
+      <DependentUpon>laporan_rekening_administrasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_rekening_administratif.rdlc" />
+    <EmbeddedResource Include="laporan_rekonsiliasi_mutasi.resx">
+      <DependentUpon>laporan_rekonsiliasi_mutasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_rincian_mutasi.rdlc" />
+    <EmbeddedResource Include="laporan_rincian_mutasi.resx">
+      <DependentUpon>laporan_rincian_mutasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_rincian_transaksi_kredit.resx">
+      <DependentUpon>laporan_rincian_transaksi_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_rincian_transaksi_tabungan.resx">
+      <DependentUpon>laporan_rincian_transaksi_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_skontro.rdlc" />
+    <EmbeddedResource Include="laporan_skontro.resx">
+      <DependentUpon>laporan_skontro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_statement_kredit_model1.resx">
+      <DependentUpon>laporan_statement_kredit_model1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_statement_kredit_model2.resx">
+      <DependentUpon>laporan_statement_kredit_model2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_user.resx">
+      <DependentUpon>log_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_grup_akses.resx">
+      <DependentUpon>master_grup_akses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_nasabah_perorangan.resx">
+      <DependentUpon>master_nasabah_perorangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_pengguna.resx">
+      <DependentUpon>master_pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_perkiraan.resx">
+      <DependentUpon>master_perkiraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_produk_kredit.resx">
+      <DependentUpon>master_produk_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_produk_tabungan.resx">
+      <DependentUpon>master_produk_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_rekening_kredit.resx">
+      <DependentUpon>master_rekening_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="master_rekening_tabungan.resx">
+      <DependentUpon>master_rekening_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nominatif_kredit.rdlc" />
+    <EmbeddedResource Include="nominatif_tabungan.rdlc" />
+    <EmbeddedResource Include="pencarian_kredit.resx">
+      <DependentUpon>pencarian_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pencarian_kredit_aktif.resx">
+      <DependentUpon>pencarian_kredit_aktif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pencarian_master_nasabah.resx">
+      <DependentUpon>pencarian_master_nasabah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pencarian_master_tabungan.resx">
+      <DependentUpon>pencarian_master_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pencarian_perkiraan.resx">
+      <DependentUpon>pencarian_perkiraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pencarian_teller.resx">
+      <DependentUpon>pencarian_teller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pengaturan_perkiraan.resx">
+      <DependentUpon>pengaturan_perkiraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="petugas_pelaporan.resx">
+      <DependentUpon>petugas_pelaporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pindah_afiliasi.resx">
+      <DependentUpon>pindah_afiliasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil_nasabah.rdlc" />
+    <EmbeddedResource Include="proses_bunga_tabungan.resx">
+      <DependentUpon>proses_bunga_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrasi_buku_tabungan.resx">
+      <DependentUpon>registrasi_buku_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rekening_koran.rdlc" />
+    <EmbeddedResource Include="rekening_kredit.resx">
+      <DependentUpon>rekening_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rekening_tabungan.resx">
+      <DependentUpon>rekening_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan_rekonsiliasi_mutasi.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="rincian_transaksi_kredit.rdlc" />
+    <EmbeddedResource Include="rincian_transaksi_kredit2.rdlc" />
+    <EmbeddedResource Include="rincian_transaksi_tabungan.rdlc" />
+    <EmbeddedResource Include="riwayat_produk_tabungan.resx">
+      <DependentUpon>riwayat_produk_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_cetakan.resx">
+      <DependentUpon>setup_cetakan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_grup_pengguna.resx">
+      <DependentUpon>setup_grup_pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_instansi.resx">
+      <DependentUpon>setup_instansi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_kolektor.resx">
+      <DependentUpon>setup_kolektor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_marketing.resx">
+      <DependentUpon>setup_marketing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_menu.resx">
+      <DependentUpon>setup_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_pegawai.resx">
+      <DependentUpon>setup_pegawai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_wilayah.resx">
+      <DependentUpon>setup_wilayah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="simulasi_kredit.resx">
+      <DependentUpon>simulasi_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statement_kredit_model1.rdlc" />
+    <EmbeddedResource Include="statement_kredit_model2.rdlc" />
+    <EmbeddedResource Include="statement_provisi.resx">
+      <DependentUpon>statement_provisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statement_tabungan.resx">
+      <DependentUpon>statement_tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statement_transaksi.resx">
+      <DependentUpon>statement_transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksi _tabungan.resx">
+      <DependentUpon>transaksi _tabungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksi_angsuran_kredit.resx">
+      <DependentUpon>transaksi_angsuran_kredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksi_jurnal_kas.resx">
+      <DependentUpon>transaksi_jurnal_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksi_jurnal_non_kas.resx">
+      <DependentUpon>transaksi_jurnal_non_kas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksi_pencairan.resx">
+      <DependentUpon>transaksi_pencairan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksi_verbal_kas.resx">
+      <DependentUpon>transaksi_verbal_kas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\config.ini" />
+    <None Include="DATASET.xsc">
+      <DependentUpon>DATASET.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DATASET.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DATASET.xss">
+      <DependentUpon>DATASET.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492932873_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Positive_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Critical details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header-b88d930b520c523ef8a53abfb86d7523.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Custom-Icon-Design-Pretty-Office-11-Coin-us-dollar.ico" />
+    <None Include="Resources\if_Save_27876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

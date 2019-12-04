@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LKM", "LKM\LKM.vbproj", "{DD08614C-577E-4059-B397-E9BADA889E1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD08614C-577E-4059-B397-E9BADA889E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD08614C-577E-4059-B397-E9BADA889E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD08614C-577E-4059-B397-E9BADA889E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD08614C-577E-4059-B397-E9BADA889E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

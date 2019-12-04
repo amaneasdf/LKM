@@ -1,0 +1,1733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DATASET" targetNamespace="http://tempuri.org/DATASET.xsd" xmlns:mstns="http://tempuri.org/DATASET.xsd" xmlns="http://tempuri.org/DATASET.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.LKM.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.LKM.My.MySettings.GlobalReference.Default.ConnectionString1" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="profil_nasabah_tabunganTableAdapter" GeneratorDataComponentClassName="profil_nasabah_tabunganTableAdapter" Name="profil_nasabah_tabungan" UserDataComponentName="profil_nasabah_tabunganTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM v_profil_nasabah_tabungan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="rek_tab_nasabah_id" DataSetColumn="rek_tab_nasabah_id" />
+              <Mapping SourceColumn="rek_tab_no_rekening" DataSetColumn="rek_tab_no_rekening" />
+              <Mapping SourceColumn="tabungan_nama_produk" DataSetColumn="tabungan_nama_produk" />
+              <Mapping SourceColumn="tab_stat_kredit" DataSetColumn="tab_stat_kredit" />
+              <Mapping SourceColumn="saldo_efektif" DataSetColumn="saldo_efektif" />
+              <Mapping SourceColumn="rek_tab_reg_waktu" DataSetColumn="rek_tab_reg_waktu" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="profil_nasabah_kreditTableAdapter" GeneratorDataComponentClassName="profil_nasabah_kreditTableAdapter" Name="profil_nasabah_kredit" UserDataComponentName="profil_nasabah_kreditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM v_profil_nasabah_kredit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="rek_kre_nasabah_id" DataSetColumn="rek_kre_nasabah_id" />
+              <Mapping SourceColumn="rek_kre_no_rekening" DataSetColumn="rek_kre_no_rekening" />
+              <Mapping SourceColumn="kredit_nama_produk" DataSetColumn="kredit_nama_produk" />
+              <Mapping SourceColumn="pencairan_tanggal" DataSetColumn="pencairan_tanggal" />
+              <Mapping SourceColumn="rek_kre_plafon_induk" DataSetColumn="rek_kre_plafon_induk" />
+              <Mapping SourceColumn="baki_debet" DataSetColumn="baki_debet" />
+              <Mapping SourceColumn="rek_kre_status" DataSetColumn="rek_kre_status" />
+              <Mapping SourceColumn="status" DataSetColumn="status" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rekening_koranTableAdapter" GeneratorDataComponentClassName="rekening_koranTableAdapter" Name="rekening_koran" UserDataComponentName="rekening_koranTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM v_rekening_koran</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tab_stat_tanggal" DataSetColumn="tab_stat_tanggal" />
+              <Mapping SourceColumn="tab_stat_no_rekening" DataSetColumn="tab_stat_no_rekening" />
+              <Mapping SourceColumn="tab_stat_debet" DataSetColumn="tab_stat_debet" />
+              <Mapping SourceColumn="tab_stat_kredit" DataSetColumn="tab_stat_kredit" />
+              <Mapping SourceColumn="tab_stat_saldo" DataSetColumn="tab_stat_saldo" />
+              <Mapping SourceColumn="tab_stat_uraian" DataSetColumn="tab_stat_uraian" />
+              <Mapping SourceColumn="tab_stat_waktu" DataSetColumn="tab_stat_waktu" />
+              <Mapping SourceColumn="tab_stat_username" DataSetColumn="tab_stat_username" />
+              <Mapping SourceColumn="namatransaksi" DataSetColumn="namatransaksi" />
+              <Mapping SourceColumn="kode_teller" DataSetColumn="kode_teller" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nominatif_tabunganTableAdapter" GeneratorDataComponentClassName="nominatif_tabunganTableAdapter" Name="nominatif_tabungan" UserDataComponentName="nominatif_tabunganTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM temp_nominatif_tabungan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_no_rekening" DataSetColumn="temp_no_rekening" />
+              <Mapping SourceColumn="temp_no_alternatif" DataSetColumn="temp_no_alternatif" />
+              <Mapping SourceColumn="temp_nama_nasabah" DataSetColumn="temp_nama_nasabah" />
+              <Mapping SourceColumn="temp_jenis_kelamin" DataSetColumn="temp_jenis_kelamin" />
+              <Mapping SourceColumn="temp_alamat" DataSetColumn="temp_alamat" />
+              <Mapping SourceColumn="temp_reg_tabungan" DataSetColumn="temp_reg_tabungan" />
+              <Mapping SourceColumn="temp_keterkaitan" DataSetColumn="temp_keterkaitan" />
+              <Mapping SourceColumn="temp_status_tabungan" DataSetColumn="temp_status_tabungan" />
+              <Mapping SourceColumn="temp_kode_produk" DataSetColumn="temp_kode_produk" />
+              <Mapping SourceColumn="temp_kode_pemilik" DataSetColumn="temp_kode_pemilik" />
+              <Mapping SourceColumn="temp_kode_instansi" DataSetColumn="temp_kode_instansi" />
+              <Mapping SourceColumn="temp_kode_wilayah" DataSetColumn="temp_kode_wilayah" />
+              <Mapping SourceColumn="temp_saldo_akhir" DataSetColumn="temp_saldo_akhir" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nominatif_kreditTableAdapter" GeneratorDataComponentClassName="nominatif_kreditTableAdapter" Name="nominatif_kredit" UserDataComponentName="nominatif_kreditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM temp_nominatif_kredit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_no_rekening" DataSetColumn="temp_no_rekening" />
+              <Mapping SourceColumn="temp_no_alternatif" DataSetColumn="temp_no_alternatif" />
+              <Mapping SourceColumn="temp_kode_produk" DataSetColumn="temp_kode_produk" />
+              <Mapping SourceColumn="temp_sistem_angsuran" DataSetColumn="temp_sistem_angsuran" />
+              <Mapping SourceColumn="temp_jangka_waktu" DataSetColumn="temp_jangka_waktu" />
+              <Mapping SourceColumn="temp_tanggal_jt" DataSetColumn="temp_tanggal_jt" />
+              <Mapping SourceColumn="temp_sistem_bunga" DataSetColumn="temp_sistem_bunga" />
+              <Mapping SourceColumn="temp_suku_bunga" DataSetColumn="temp_suku_bunga" />
+              <Mapping SourceColumn="temp_plafon_induk" DataSetColumn="temp_plafon_induk" />
+              <Mapping SourceColumn="temp_status" DataSetColumn="temp_status" />
+              <Mapping SourceColumn="temp_tanggal_pencairan" DataSetColumn="temp_tanggal_pencairan" />
+              <Mapping SourceColumn="temp_jenis_kredit" DataSetColumn="temp_jenis_kredit" />
+              <Mapping SourceColumn="temp_golongan_debitur" DataSetColumn="temp_golongan_debitur" />
+              <Mapping SourceColumn="temp_jenis_penggunaan" DataSetColumn="temp_jenis_penggunaan" />
+              <Mapping SourceColumn="temp_sektor_ekonomi" DataSetColumn="temp_sektor_ekonomi" />
+              <Mapping SourceColumn="temp_jenis_usaha" DataSetColumn="temp_jenis_usaha" />
+              <Mapping SourceColumn="temp_sumber_dana" DataSetColumn="temp_sumber_dana" />
+              <Mapping SourceColumn="temp_kolektor" DataSetColumn="temp_kolektor" />
+              <Mapping SourceColumn="temp_instansi" DataSetColumn="temp_instansi" />
+              <Mapping SourceColumn="temp_wilayah" DataSetColumn="temp_wilayah" />
+              <Mapping SourceColumn="temp_agunan" DataSetColumn="temp_agunan" />
+              <Mapping SourceColumn="temp_kecamatan" DataSetColumn="temp_kecamatan" />
+              <Mapping SourceColumn="temp_kelurahan" DataSetColumn="temp_kelurahan" />
+              <Mapping SourceColumn="temp_keterkaitan" DataSetColumn="temp_keterkaitan" />
+              <Mapping SourceColumn="temp_jenis_kelamin" DataSetColumn="temp_jenis_kelamin" />
+              <Mapping SourceColumn="temp_nama_nasabah" DataSetColumn="temp_nama_nasabah" />
+              <Mapping SourceColumn="temp_alamat" DataSetColumn="temp_alamat" />
+              <Mapping SourceColumn="temp_waktu_pencairan" DataSetColumn="temp_waktu_pencairan" />
+              <Mapping SourceColumn="temp_baki_debet" DataSetColumn="temp_baki_debet" />
+              <Mapping SourceColumn="temp_tgk_pokok" DataSetColumn="temp_tgk_pokok" />
+              <Mapping SourceColumn="temp_frek_pokok" DataSetColumn="temp_frek_pokok" />
+              <Mapping SourceColumn="temp_tgk_bunga" DataSetColumn="temp_tgk_bunga" />
+              <Mapping SourceColumn="temp_frek_bunga" DataSetColumn="temp_frek_bunga" />
+              <Mapping SourceColumn="temp_jml_hari" DataSetColumn="temp_jml_hari" />
+              <Mapping SourceColumn="temp_kolek" DataSetColumn="temp_kolek" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rincian_transaksi_tabunganTableAdapter" GeneratorDataComponentClassName="rincian_transaksi_tabunganTableAdapter" Name="rincian_transaksi_tabungan" UserDataComponentName="rincian_transaksi_tabunganTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tab_stat_no_rekening, rek_tab_no_alternatif, namanasabah, tab_stat_tanggal, tab_stat_kode, tab_stat_debet, tab_stat_kredit, tab_stat_saldo, jenis,pembukaan
+FROM            v_rincian_transaksi_tabungan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tab_stat_no_rekening" DataSetColumn="tab_stat_no_rekening" />
+              <Mapping SourceColumn="namanasabah" DataSetColumn="namanasabah" />
+              <Mapping SourceColumn="tab_stat_tanggal" DataSetColumn="tab_stat_tanggal" />
+              <Mapping SourceColumn="tab_stat_kode" DataSetColumn="tab_stat_kode" />
+              <Mapping SourceColumn="tab_stat_debet" DataSetColumn="tab_stat_debet" />
+              <Mapping SourceColumn="tab_stat_kredit" DataSetColumn="tab_stat_kredit" />
+              <Mapping SourceColumn="tab_stat_saldo" DataSetColumn="tab_stat_saldo" />
+              <Mapping SourceColumn="jenis" DataSetColumn="jenis" />
+              <Mapping SourceColumn="pembukaan" DataSetColumn="pembukaan" />
+              <Mapping SourceColumn="rek_tab_no_alternatif" DataSetColumn="rek_tab_no_alternatif" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rincian_transaksi_kreditTableAdapter" GeneratorDataComponentClassName="rincian_transaksi_kreditTableAdapter" Name="rincian_transaksi_kredit" UserDataComponentName="rincian_transaksi_kreditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        pencairan_no_rekening, nasabah_nama1, nasabah_tanggal_lahir, pencairan_waktu, rek_kre_jangka_waktu, rek_kre_suku_bunga, pencairan_kode_transaksi, 
+                         pencairan_jml_pencairan, pencairan_provisi, pencairan_administrasi, pencairan_premi, pencairan_notaris, pencairan_materai, 
+                         pencairan_lain
+FROM            v_rincian_transaksi_kredit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="pencairan_no_rekening" DataSetColumn="pencairan_no_rekening" />
+              <Mapping SourceColumn="nasabah_nama1" DataSetColumn="nasabah_nama1" />
+              <Mapping SourceColumn="nasabah_tanggal_lahir" DataSetColumn="nasabah_tanggal_lahir" />
+              <Mapping SourceColumn="pencairan_waktu" DataSetColumn="pencairan_waktu" />
+              <Mapping SourceColumn="rek_kre_jangka_waktu" DataSetColumn="rek_kre_jangka_waktu" />
+              <Mapping SourceColumn="rek_kre_suku_bunga" DataSetColumn="rek_kre_suku_bunga" />
+              <Mapping SourceColumn="pencairan_kode_transaksi" DataSetColumn="pencairan_kode_transaksi" />
+              <Mapping SourceColumn="pencairan_jml_pencairan" DataSetColumn="pencairan_jml_pencairan" />
+              <Mapping SourceColumn="pencairan_provisi" DataSetColumn="pencairan_provisi" />
+              <Mapping SourceColumn="pencairan_administrasi" DataSetColumn="pencairan_administrasi" />
+              <Mapping SourceColumn="pencairan_premi" DataSetColumn="pencairan_premi" />
+              <Mapping SourceColumn="pencairan_notaris" DataSetColumn="pencairan_notaris" />
+              <Mapping SourceColumn="pencairan_materai" DataSetColumn="pencairan_materai" />
+              <Mapping SourceColumn="pencairan_lain" DataSetColumn="pencairan_lain" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="statement_kreditTableAdapter" GeneratorDataComponentClassName="statement_kreditTableAdapter" Name="statement_kredit" UserDataComponentName="statement_kreditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM v_statement_kredit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="kre_stat_no_rekening" DataSetColumn="kre_stat_no_rekening" />
+              <Mapping SourceColumn="kre_stat_kode" DataSetColumn="kre_stat_kode" />
+              <Mapping SourceColumn="kre_stat_uraian" DataSetColumn="kre_stat_uraian" />
+              <Mapping SourceColumn="kre_stat_realisasi" DataSetColumn="kre_stat_realisasi" />
+              <Mapping SourceColumn="kre_stat_tag_pokok" DataSetColumn="kre_stat_tag_pokok" />
+              <Mapping SourceColumn="kre_stat_tag_bunga" DataSetColumn="kre_stat_tag_bunga" />
+              <Mapping SourceColumn="kre_stat_angs_pokok" DataSetColumn="kre_stat_angs_pokok" />
+              <Mapping SourceColumn="kre_stat_angs_bunga" DataSetColumn="kre_stat_angs_bunga" />
+              <Mapping SourceColumn="kre_stat_denda" DataSetColumn="kre_stat_denda" />
+              <Mapping SourceColumn="bakidebet" DataSetColumn="bakidebet" />
+              <Mapping SourceColumn="kre_stat_waktu" DataSetColumn="kre_stat_waktu" />
+              <Mapping SourceColumn="kre_stat_jenis" DataSetColumn="kre_stat_jenis" />
+              <Mapping SourceColumn="tunggakan_pokok" DataSetColumn="tunggakan_pokok" />
+              <Mapping SourceColumn="tunggakan_bunga" DataSetColumn="tunggakan_bunga" />
+              <Mapping SourceColumn="kolek" DataSetColumn="kolek" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="temp_neracaTableAdapter" GeneratorDataComponentClassName="temp_neracaTableAdapter" Name="temp_neraca" UserDataComponentName="temp_neracaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        *
+FROM            temp_neraca</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_id" DataSetColumn="temp_id" />
+              <Mapping SourceColumn="temp_perkiraan_kode" DataSetColumn="temp_perkiraan_kode" />
+              <Mapping SourceColumn="temp_perkiraan_umum" DataSetColumn="temp_perkiraan_umum" />
+              <Mapping SourceColumn="temp_perkiraan_nama" DataSetColumn="temp_perkiraan_nama" />
+              <Mapping SourceColumn="temp_saldo_awal" DataSetColumn="temp_saldo_awal" />
+              <Mapping SourceColumn="temp_debet" DataSetColumn="temp_debet" />
+              <Mapping SourceColumn="temp_kredit" DataSetColumn="temp_kredit" />
+              <Mapping SourceColumn="temp_saldo_akhir" DataSetColumn="temp_saldo_akhir" />
+              <Mapping SourceColumn="temp_jenis" DataSetColumn="temp_jenis" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+              <Mapping SourceColumn="temp_saldo_mutasi" DataSetColumn="temp_saldo_mutasi" />
+              <Mapping SourceColumn="temp_mutasi" DataSetColumn="temp_mutasi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="temp_neraca2TableAdapter" GeneratorDataComponentClassName="temp_neraca2TableAdapter" Name="temp_neraca2" UserDataComponentName="temp_neraca2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT *
+FROM temp_neraca</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_id" DataSetColumn="temp_id" />
+              <Mapping SourceColumn="temp_perkiraan_kode" DataSetColumn="temp_perkiraan_kode" />
+              <Mapping SourceColumn="temp_perkiraan_umum" DataSetColumn="temp_perkiraan_umum" />
+              <Mapping SourceColumn="temp_perkiraan_nama" DataSetColumn="temp_perkiraan_nama" />
+              <Mapping SourceColumn="temp_saldo_awal" DataSetColumn="temp_saldo_awal" />
+              <Mapping SourceColumn="temp_debet" DataSetColumn="temp_debet" />
+              <Mapping SourceColumn="temp_kredit" DataSetColumn="temp_kredit" />
+              <Mapping SourceColumn="temp_saldo_akhir" DataSetColumn="temp_saldo_akhir" />
+              <Mapping SourceColumn="temp_jenis" DataSetColumn="temp_jenis" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+              <Mapping SourceColumn="temp_mutasi" DataSetColumn="temp_mutasi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="temp_deret_harianTableAdapter" GeneratorDataComponentClassName="temp_deret_harianTableAdapter" Name="temp_deret_harian" UserDataComponentName="temp_deret_harianTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        temp_laporan_deret.*
+FROM            temp_laporan_deret</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="deret_id" DataSetColumn="deret_id" />
+              <Mapping SourceColumn="deret_perkiraan_kode" DataSetColumn="deret_perkiraan_kode" />
+              <Mapping SourceColumn="deret_perkiraan_nama" DataSetColumn="deret_perkiraan_nama" />
+              <Mapping SourceColumn="deret_perkiraan_sandi" DataSetColumn="deret_perkiraan_sandi" />
+              <Mapping SourceColumn="deret_januari" DataSetColumn="deret_januari" />
+              <Mapping SourceColumn="deret_februari" DataSetColumn="deret_februari" />
+              <Mapping SourceColumn="deret_maret" DataSetColumn="deret_maret" />
+              <Mapping SourceColumn="deret_april" DataSetColumn="deret_april" />
+              <Mapping SourceColumn="deret_mei" DataSetColumn="deret_mei" />
+              <Mapping SourceColumn="deret_juni" DataSetColumn="deret_juni" />
+              <Mapping SourceColumn="deret_juli" DataSetColumn="deret_juli" />
+              <Mapping SourceColumn="deret_agustus" DataSetColumn="deret_agustus" />
+              <Mapping SourceColumn="deret_september" DataSetColumn="deret_september" />
+              <Mapping SourceColumn="deret_oktober" DataSetColumn="deret_oktober" />
+              <Mapping SourceColumn="deret_november" DataSetColumn="deret_november" />
+              <Mapping SourceColumn="deret_desember" DataSetColumn="deret_desember" />
+              <Mapping SourceColumn="deret_username" DataSetColumn="deret_username" />
+              <Mapping SourceColumn="deret_jenis" DataSetColumn="deret_jenis" />
+              <Mapping SourceColumn="deret_total" DataSetColumn="deret_total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="temp_rincian_mutasiTableAdapter" GeneratorDataComponentClassName="temp_rincian_mutasiTableAdapter" Name="temp_rincian_mutasi" UserDataComponentName="temp_rincian_mutasiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT *
+FROM temp_rincian_mutasi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_tanggal" DataSetColumn="temp_tanggal" />
+              <Mapping SourceColumn="temp_saldo_awal" DataSetColumn="temp_saldo_awal" />
+              <Mapping SourceColumn="temp_debet" DataSetColumn="temp_debet" />
+              <Mapping SourceColumn="temp_kredit" DataSetColumn="temp_kredit" />
+              <Mapping SourceColumn="temp_saldo_akhir" DataSetColumn="temp_saldo_akhir" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="temp_jadualTableAdapter" GeneratorDataComponentClassName="temp_jadualTableAdapter" Name="temp_jadual" UserDataComponentName="temp_jadualTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM temp_jadual_angsuran</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_no_rekening" DataSetColumn="temp_no_rekening" />
+              <Mapping SourceColumn="temp_angsuran_ke" DataSetColumn="temp_angsuran_ke" />
+              <Mapping SourceColumn="temp_tanggal_tagihan" DataSetColumn="temp_tanggal_tagihan" />
+              <Mapping SourceColumn="temp_pokok" DataSetColumn="temp_pokok" />
+              <Mapping SourceColumn="temp_bunga" DataSetColumn="temp_bunga" />
+              <Mapping SourceColumn="temp_total" DataSetColumn="temp_total" />
+              <Mapping SourceColumn="temp_saldo_pokok" DataSetColumn="temp_saldo_pokok" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="simulasi_kreditTableAdapter" GeneratorDataComponentClassName="simulasi_kreditTableAdapter" Name="simulasi_kredit" UserDataComponentName="simulasi_kreditTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT *
+FROM temp_simulasi_kredit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_angsuran_ke" DataSetColumn="temp_angsuran_ke" />
+              <Mapping SourceColumn="temp_tanggal_tagihan" DataSetColumn="temp_tanggal_tagihan" />
+              <Mapping SourceColumn="temp_pokok" DataSetColumn="temp_pokok" />
+              <Mapping SourceColumn="temp_bunga" DataSetColumn="temp_bunga" />
+              <Mapping SourceColumn="temp_saldo_pokok" DataSetColumn="temp_saldo_pokok" />
+              <Mapping SourceColumn="temp_saldo_bunga" DataSetColumn="temp_saldo_bunga" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="daftar_nasabahTableAdapter" GeneratorDataComponentClassName="daftar_nasabahTableAdapter" Name="daftar_nasabah" UserDataComponentName="daftar_nasabahTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT *
+FROM temp_daftar_nasabah</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="temp_nasabah_id" DataSetColumn="temp_nasabah_id" />
+              <Mapping SourceColumn="temp_nama_nasabah" DataSetColumn="temp_nama_nasabah" />
+              <Mapping SourceColumn="temp_jenis_kelamin" DataSetColumn="temp_jenis_kelamin" />
+              <Mapping SourceColumn="temp_tanggal_lahir" DataSetColumn="temp_tanggal_lahir" />
+              <Mapping SourceColumn="temp_nik" DataSetColumn="temp_nik" />
+              <Mapping SourceColumn="temp_jml_tabungan" DataSetColumn="temp_jml_tabungan" />
+              <Mapping SourceColumn="temp_jml_kredit" DataSetColumn="temp_jml_kredit" />
+              <Mapping SourceColumn="temp_username" DataSetColumn="temp_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rincian_transaksi_kredit2TableAdapter" GeneratorDataComponentClassName="rincian_transaksi_kredit2TableAdapter" Name="rincian_transaksi_kredit2" UserDataComponentName="rincian_transaksi_kredit2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT angs_no_rekening,  nasabah_nama1, nasabah_alamat,tgl_pencairan, angs_tanggal, angs_kode_transaksi, angs_pokok, angs_bunga, angs_denda, angs_total_setoran, bakidebet, jenis, kolek FROM v_rincian_transaksi_kredit2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="angs_no_rekening" DataSetColumn="angs_no_rekening" />
+              <Mapping SourceColumn="nasabah_nama1" DataSetColumn="nasabah_nama1" />
+              <Mapping SourceColumn="nasabah_alamat" DataSetColumn="nasabah_alamat" />
+              <Mapping SourceColumn="tgl_pencairan" DataSetColumn="tgl_pencairan" />
+              <Mapping SourceColumn="angs_tanggal" DataSetColumn="angs_tanggal" />
+              <Mapping SourceColumn="angs_kode_transaksi" DataSetColumn="angs_kode_transaksi" />
+              <Mapping SourceColumn="angs_pokok" DataSetColumn="angs_pokok" />
+              <Mapping SourceColumn="angs_bunga" DataSetColumn="angs_bunga" />
+              <Mapping SourceColumn="angs_denda" DataSetColumn="angs_denda" />
+              <Mapping SourceColumn="angs_total_setoran" DataSetColumn="angs_total_setoran" />
+              <Mapping SourceColumn="bakidebet" DataSetColumn="bakidebet" />
+              <Mapping SourceColumn="jenis" DataSetColumn="jenis" />
+              <Mapping SourceColumn="kolek" DataSetColumn="kolek" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="noinatif_bunga_tabunganTableAdapter" GeneratorDataComponentClassName="noinatif_bunga_tabunganTableAdapter" Name="nominatif_bunga_tabungan" UserDataComponentName="noinatif_bunga_tabunganTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM v_nominatif_bunga_tabungan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="detail_tanggal" DataSetColumn="detail_tanggal" />
+              <Mapping SourceColumn="detail_no_rekening" DataSetColumn="detail_no_rekening" />
+              <Mapping SourceColumn="rek_tab_no_alternatif" DataSetColumn="rek_tab_no_alternatif" />
+              <Mapping SourceColumn="detail_nama_nasabah" DataSetColumn="detail_nama_nasabah" />
+              <Mapping SourceColumn="rek_tab_kode_pemilik" DataSetColumn="rek_tab_kode_pemilik" />
+              <Mapping SourceColumn="rek_tab_kode_kolektor" DataSetColumn="rek_tab_kode_kolektor" />
+              <Mapping SourceColumn="rek_tab_kode_wilayah" DataSetColumn="rek_tab_kode_wilayah" />
+              <Mapping SourceColumn="rek_tab_kode_instansi" DataSetColumn="rek_tab_kode_instansi" />
+              <Mapping SourceColumn="nasabah_keterkaitan" DataSetColumn="nasabah_keterkaitan" />
+              <Mapping SourceColumn="nasabah_jenis_kelamin" DataSetColumn="nasabah_jenis_kelamin" />
+              <Mapping SourceColumn="detail_metode_bunga" DataSetColumn="detail_metode_bunga" />
+              <Mapping SourceColumn="detail_bunga" DataSetColumn="detail_bunga" />
+              <Mapping SourceColumn="detail_saldo_awal" DataSetColumn="detail_saldo_awal" />
+              <Mapping SourceColumn="detail_nilai_bunga" DataSetColumn="detail_nilai_bunga" />
+              <Mapping SourceColumn="detail_adm_rekening" DataSetColumn="detail_adm_rekening" />
+              <Mapping SourceColumn="detail_adm_tab_pasif" DataSetColumn="detail_adm_tab_pasif" />
+              <Mapping SourceColumn="detail_saldo_akhir" DataSetColumn="detail_saldo_akhir" />
+              <Mapping SourceColumn="rek_tab_kode_produk" DataSetColumn="rek_tab_kode_produk" />
+              <Mapping SourceColumn="detail_pajak_tabungan" DataSetColumn="detail_pajak_tabungan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="jurnal_kasTableAdapter" GeneratorDataComponentClassName="jurnal_kasTableAdapter" Name="jurnal_kas" UserDataComponentName="jurnal_kasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM v_jurnal_kas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="jurnal_tanggal" DataSetColumn="jurnal_tanggal" />
+              <Mapping SourceColumn="jurnal_waktu" DataSetColumn="jurnal_waktu" />
+              <Mapping SourceColumn="jurnal_trans" DataSetColumn="jurnal_trans" />
+              <Mapping SourceColumn="jurnal_jenis" DataSetColumn="jurnal_jenis" />
+              <Mapping SourceColumn="jenis" DataSetColumn="jenis" />
+              <Mapping SourceColumn="jurnal_perkiraan" DataSetColumn="jurnal_perkiraan" />
+              <Mapping SourceColumn="jurnal_uraian" DataSetColumn="jurnal_uraian" />
+              <Mapping SourceColumn="masuk" DataSetColumn="masuk" />
+              <Mapping SourceColumn="keluar" DataSetColumn="keluar" />
+              <Mapping SourceColumn="jurnal_username" DataSetColumn="jurnal_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="jurnal_nonkasTableAdapter" GeneratorDataComponentClassName="jurnal_nonkasTableAdapter" Name="jurnal_nonkas" UserDataComponentName="jurnal_nonkasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM v_jurnal_nonkas
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="jurnal_tanggal" DataSetColumn="jurnal_tanggal" />
+              <Mapping SourceColumn="jurnal_waktu" DataSetColumn="jurnal_waktu" />
+              <Mapping SourceColumn="jurnal_trans" DataSetColumn="jurnal_trans" />
+              <Mapping SourceColumn="jurnal_jenis" DataSetColumn="jurnal_jenis" />
+              <Mapping SourceColumn="jenis" DataSetColumn="jenis" />
+              <Mapping SourceColumn="jurnal_perkiraan" DataSetColumn="jurnal_perkiraan" />
+              <Mapping SourceColumn="jurnal_uraian" DataSetColumn="jurnal_uraian" />
+              <Mapping SourceColumn="jurnal_debet" DataSetColumn="jurnal_debet" />
+              <Mapping SourceColumn="jurnal_kredit" DataSetColumn="jurnal_kredit" />
+              <Mapping SourceColumn="jurnal_username" DataSetColumn="jurnal_username" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="gambar_nasabahTableAdapter" GeneratorDataComponentClassName="gambar_nasabahTableAdapter" Name="gambar_nasabah" UserDataComponentName="gambar_nasabahTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM data_nasabah_gambar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="gambar_nasabah_id" DataSetColumn="gambar_nasabah_id" />
+              <Mapping SourceColumn="gambar_file" DataSetColumn="gambar_file" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="verbal_kasTableAdapter" GeneratorDataComponentClassName="verbal_kasTableAdapter" Name="verbal_kas" UserDataComponentName="verbal_kasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM verbal_kas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="verbal_id" DataSetColumn="verbal_id" />
+              <Mapping SourceColumn="verbal_tanggal" DataSetColumn="verbal_tanggal" />
+              <Mapping SourceColumn="verbal_jenis" DataSetColumn="verbal_jenis" />
+              <Mapping SourceColumn="verbal_pecahan" DataSetColumn="verbal_pecahan" />
+              <Mapping SourceColumn="verbal_fisik" DataSetColumn="verbal_fisik" />
+              <Mapping SourceColumn="verbal_nominal" DataSetColumn="verbal_nominal" />
+              <Mapping SourceColumn="verbal_reg_username" DataSetColumn="verbal_reg_username" />
+              <Mapping SourceColumn="verbal_reg_waktu" DataSetColumn="verbal_reg_waktu" />
+              <Mapping SourceColumn="verbal_update_username" DataSetColumn="verbal_update_username" />
+              <Mapping SourceColumn="verbal_update_waktu" DataSetColumn="verbal_update_waktu" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DATASET" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DATASET" msprop:Generator_UserDSName="DATASET">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="profil_nasabah_tabungan" msprop:Generator_TableClassName="profil_nasabah_tabunganDataTable" msprop:Generator_TableVarName="tableprofil_nasabah_tabungan" msprop:Generator_TablePropName="profil_nasabah_tabungan" msprop:Generator_RowDeletingName="profil_nasabah_tabunganRowDeleting" msprop:Generator_RowChangingName="profil_nasabah_tabunganRowChanging" msprop:Generator_RowEvHandlerName="profil_nasabah_tabunganRowChangeEventHandler" msprop:Generator_RowDeletedName="profil_nasabah_tabunganRowDeleted" msprop:Generator_UserTableName="profil_nasabah_tabungan" msprop:Generator_RowChangedName="profil_nasabah_tabunganRowChanged" msprop:Generator_RowEvArgName="profil_nasabah_tabunganRowChangeEvent" msprop:Generator_RowClassName="profil_nasabah_tabunganRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rek_tab_nasabah_id" msprop:Generator_ColumnVarNameInTable="columnrek_tab_nasabah_id" msprop:Generator_ColumnPropNameInRow="rek_tab_nasabah_id" msprop:Generator_ColumnPropNameInTable="rek_tab_nasabah_idColumn" msprop:Generator_UserColumnName="rek_tab_nasabah_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_no_rekening" msprop:Generator_ColumnVarNameInTable="columnrek_tab_no_rekening" msprop:Generator_ColumnPropNameInRow="rek_tab_no_rekening" msprop:Generator_ColumnPropNameInTable="rek_tab_no_rekeningColumn" msprop:Generator_UserColumnName="rek_tab_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tabungan_nama_produk" msprop:Generator_ColumnVarNameInTable="columntabungan_nama_produk" msprop:Generator_ColumnPropNameInRow="tabungan_nama_produk" msprop:Generator_ColumnPropNameInTable="tabungan_nama_produkColumn" msprop:Generator_UserColumnName="tabungan_nama_produk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tab_stat_kredit" msprop:Generator_ColumnVarNameInTable="columntab_stat_kredit" msprop:Generator_ColumnPropNameInRow="tab_stat_kredit" msprop:Generator_ColumnPropNameInTable="tab_stat_kreditColumn" msprop:Generator_UserColumnName="tab_stat_kredit" type="xs:decimal" />
+              <xs:element name="saldo_efektif" msprop:Generator_ColumnVarNameInTable="columnsaldo_efektif" msprop:Generator_ColumnPropNameInRow="saldo_efektif" msprop:Generator_ColumnPropNameInTable="saldo_efektifColumn" msprop:Generator_UserColumnName="saldo_efektif" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rek_tab_status" msprop:Generator_ColumnVarNameInTable="columnrek_tab_status" msprop:Generator_ColumnPropNameInRow="rek_tab_status" msprop:Generator_ColumnPropNameInTable="rek_tab_statusColumn" msprop:Generator_UserColumnName="rek_tab_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_reg_waktu" msprop:Generator_ColumnVarNameInTable="columnrek_tab_reg_waktu" msprop:Generator_ColumnPropNameInRow="rek_tab_reg_waktu" msprop:Generator_ColumnPropNameInTable="rek_tab_reg_waktuColumn" msprop:Generator_UserColumnName="rek_tab_reg_waktu" type="xs:dateTime" />
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="profil_nasabah_kredit" msprop:Generator_TableClassName="profil_nasabah_kreditDataTable" msprop:Generator_TableVarName="tableprofil_nasabah_kredit" msprop:Generator_TablePropName="profil_nasabah_kredit" msprop:Generator_RowDeletingName="profil_nasabah_kreditRowDeleting" msprop:Generator_RowChangingName="profil_nasabah_kreditRowChanging" msprop:Generator_RowEvHandlerName="profil_nasabah_kreditRowChangeEventHandler" msprop:Generator_RowDeletedName="profil_nasabah_kreditRowDeleted" msprop:Generator_UserTableName="profil_nasabah_kredit" msprop:Generator_RowChangedName="profil_nasabah_kreditRowChanged" msprop:Generator_RowEvArgName="profil_nasabah_kreditRowChangeEvent" msprop:Generator_RowClassName="profil_nasabah_kreditRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rek_kre_nasabah_id" msprop:Generator_ColumnVarNameInTable="columnrek_kre_nasabah_id" msprop:Generator_ColumnPropNameInRow="rek_kre_nasabah_id" msprop:Generator_ColumnPropNameInTable="rek_kre_nasabah_idColumn" msprop:Generator_UserColumnName="rek_kre_nasabah_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_kre_no_rekening" msprop:Generator_ColumnVarNameInTable="columnrek_kre_no_rekening" msprop:Generator_ColumnPropNameInRow="rek_kre_no_rekening" msprop:Generator_ColumnPropNameInTable="rek_kre_no_rekeningColumn" msprop:Generator_UserColumnName="rek_kre_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kredit_nama_produk" msprop:Generator_ColumnVarNameInTable="columnkredit_nama_produk" msprop:Generator_ColumnPropNameInRow="kredit_nama_produk" msprop:Generator_ColumnPropNameInTable="kredit_nama_produkColumn" msprop:Generator_UserColumnName="kredit_nama_produk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pencairan_tanggal" msprop:Generator_ColumnVarNameInTable="columnpencairan_tanggal" msprop:Generator_ColumnPropNameInRow="pencairan_tanggal" msprop:Generator_ColumnPropNameInTable="pencairan_tanggalColumn" msprop:Generator_UserColumnName="pencairan_tanggal" type="xs:dateTime" />
+              <xs:element name="rek_kre_plafon_induk" msprop:Generator_ColumnVarNameInTable="columnrek_kre_plafon_induk" msprop:Generator_ColumnPropNameInRow="rek_kre_plafon_induk" msprop:Generator_ColumnPropNameInTable="rek_kre_plafon_indukColumn" msprop:Generator_UserColumnName="rek_kre_plafon_induk" type="xs:decimal" />
+              <xs:element name="baki_debet" msprop:Generator_ColumnVarNameInTable="columnbaki_debet" msprop:Generator_ColumnPropNameInRow="baki_debet" msprop:Generator_ColumnPropNameInTable="baki_debetColumn" msprop:Generator_UserColumnName="baki_debet" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rek_kre_status" msprop:Generator_ColumnVarNameInTable="columnrek_kre_status" msprop:Generator_ColumnPropNameInRow="rek_kre_status" msprop:Generator_ColumnPropNameInTable="rek_kre_statusColumn" msprop:Generator_UserColumnName="rek_kre_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rekening_koran" msprop:Generator_TableClassName="rekening_koranDataTable" msprop:Generator_TableVarName="tablerekening_koran" msprop:Generator_TablePropName="rekening_koran" msprop:Generator_RowDeletingName="rekening_koranRowDeleting" msprop:Generator_RowChangingName="rekening_koranRowChanging" msprop:Generator_RowEvHandlerName="rekening_koranRowChangeEventHandler" msprop:Generator_RowDeletedName="rekening_koranRowDeleted" msprop:Generator_UserTableName="rekening_koran" msprop:Generator_RowChangedName="rekening_koranRowChanged" msprop:Generator_RowEvArgName="rekening_koranRowChangeEvent" msprop:Generator_RowClassName="rekening_koranRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tab_stat_tanggal" msprop:Generator_ColumnVarNameInTable="columntab_stat_tanggal" msprop:Generator_ColumnPropNameInRow="tab_stat_tanggal" msprop:Generator_ColumnPropNameInTable="tab_stat_tanggalColumn" msprop:Generator_UserColumnName="tab_stat_tanggal" type="xs:dateTime" />
+              <xs:element name="tab_stat_no_rekening" msprop:Generator_ColumnVarNameInTable="columntab_stat_no_rekening" msprop:Generator_ColumnPropNameInRow="tab_stat_no_rekening" msprop:Generator_ColumnPropNameInTable="tab_stat_no_rekeningColumn" msprop:Generator_UserColumnName="tab_stat_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tab_stat_debet" msprop:Generator_ColumnVarNameInTable="columntab_stat_debet" msprop:Generator_ColumnPropNameInRow="tab_stat_debet" msprop:Generator_ColumnPropNameInTable="tab_stat_debetColumn" msprop:Generator_UserColumnName="tab_stat_debet" type="xs:decimal" />
+              <xs:element name="tab_stat_kredit" msprop:Generator_ColumnVarNameInTable="columntab_stat_kredit" msprop:Generator_ColumnPropNameInRow="tab_stat_kredit" msprop:Generator_ColumnPropNameInTable="tab_stat_kreditColumn" msprop:Generator_UserColumnName="tab_stat_kredit" type="xs:decimal" />
+              <xs:element name="tab_stat_saldo" msprop:Generator_ColumnVarNameInTable="columntab_stat_saldo" msprop:Generator_ColumnPropNameInRow="tab_stat_saldo" msprop:Generator_ColumnPropNameInTable="tab_stat_saldoColumn" msprop:Generator_UserColumnName="tab_stat_saldo" type="xs:decimal" />
+              <xs:element name="tab_stat_uraian" msprop:Generator_ColumnVarNameInTable="columntab_stat_uraian" msprop:Generator_ColumnPropNameInRow="tab_stat_uraian" msprop:Generator_ColumnPropNameInTable="tab_stat_uraianColumn" msprop:Generator_UserColumnName="tab_stat_uraian">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tab_stat_waktu" msprop:Generator_ColumnVarNameInTable="columntab_stat_waktu" msprop:Generator_ColumnPropNameInRow="tab_stat_waktu" msprop:Generator_ColumnPropNameInTable="tab_stat_waktuColumn" msprop:Generator_UserColumnName="tab_stat_waktu" type="xs:dateTime" />
+              <xs:element name="tab_stat_username" msprop:Generator_ColumnVarNameInTable="columntab_stat_username" msprop:Generator_ColumnPropNameInRow="tab_stat_username" msprop:Generator_ColumnPropNameInTable="tab_stat_usernameColumn" msprop:Generator_UserColumnName="tab_stat_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="namatransaksi" msprop:Generator_ColumnVarNameInTable="columnnamatransaksi" msprop:Generator_ColumnPropNameInRow="namatransaksi" msprop:Generator_ColumnPropNameInTable="namatransaksiColumn" msprop:Generator_UserColumnName="namatransaksi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kode_teller" msprop:Generator_ColumnVarNameInTable="columnkode_teller" msprop:Generator_ColumnPropNameInRow="kode_teller" msprop:Generator_ColumnPropNameInTable="kode_tellerColumn" msprop:Generator_UserColumnName="kode_teller" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nominatif_tabungan" msprop:Generator_TableClassName="nominatif_tabunganDataTable" msprop:Generator_TableVarName="tablenominatif_tabungan" msprop:Generator_TablePropName="nominatif_tabungan" msprop:Generator_RowDeletingName="nominatif_tabunganRowDeleting" msprop:Generator_RowChangingName="nominatif_tabunganRowChanging" msprop:Generator_RowEvHandlerName="nominatif_tabunganRowChangeEventHandler" msprop:Generator_RowDeletedName="nominatif_tabunganRowDeleted" msprop:Generator_UserTableName="nominatif_tabungan" msprop:Generator_RowChangedName="nominatif_tabunganRowChanged" msprop:Generator_RowEvArgName="nominatif_tabunganRowChangeEvent" msprop:Generator_RowClassName="nominatif_tabunganRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_no_rekening" msprop:Generator_ColumnVarNameInTable="columntemp_no_rekening" msprop:Generator_ColumnPropNameInRow="temp_no_rekening" msprop:Generator_ColumnPropNameInTable="temp_no_rekeningColumn" msprop:Generator_UserColumnName="temp_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_no_alternatif" msprop:Generator_ColumnVarNameInTable="columntemp_no_alternatif" msprop:Generator_ColumnPropNameInRow="temp_no_alternatif" msprop:Generator_ColumnPropNameInTable="temp_no_alternatifColumn" msprop:Generator_UserColumnName="temp_no_alternatif">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_nama_nasabah" msprop:Generator_ColumnVarNameInTable="columntemp_nama_nasabah" msprop:Generator_ColumnPropNameInRow="temp_nama_nasabah" msprop:Generator_ColumnPropNameInTable="temp_nama_nasabahColumn" msprop:Generator_UserColumnName="temp_nama_nasabah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_jenis_kelamin" msprop:Generator_ColumnVarNameInTable="columntemp_jenis_kelamin" msprop:Generator_ColumnPropNameInRow="temp_jenis_kelamin" msprop:Generator_ColumnPropNameInTable="temp_jenis_kelaminColumn" msprop:Generator_UserColumnName="temp_jenis_kelamin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_alamat" msprop:Generator_ColumnVarNameInTable="columntemp_alamat" msprop:Generator_ColumnPropNameInRow="temp_alamat" msprop:Generator_ColumnPropNameInTable="temp_alamatColumn" msprop:Generator_UserColumnName="temp_alamat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_reg_tabungan" msprop:Generator_ColumnVarNameInTable="columntemp_reg_tabungan" msprop:Generator_ColumnPropNameInRow="temp_reg_tabungan" msprop:Generator_ColumnPropNameInTable="temp_reg_tabunganColumn" msprop:Generator_UserColumnName="temp_reg_tabungan" type="xs:dateTime" />
+              <xs:element name="temp_keterkaitan" msprop:Generator_ColumnVarNameInTable="columntemp_keterkaitan" msprop:Generator_ColumnPropNameInRow="temp_keterkaitan" msprop:Generator_ColumnPropNameInTable="temp_keterkaitanColumn" msprop:Generator_UserColumnName="temp_keterkaitan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_status_tabungan" msprop:Generator_ColumnVarNameInTable="columntemp_status_tabungan" msprop:Generator_ColumnPropNameInRow="temp_status_tabungan" msprop:Generator_ColumnPropNameInTable="temp_status_tabunganColumn" msprop:Generator_UserColumnName="temp_status_tabungan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kode_produk" msprop:Generator_ColumnVarNameInTable="columntemp_kode_produk" msprop:Generator_ColumnPropNameInRow="temp_kode_produk" msprop:Generator_ColumnPropNameInTable="temp_kode_produkColumn" msprop:Generator_UserColumnName="temp_kode_produk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kode_pemilik" msprop:Generator_ColumnVarNameInTable="columntemp_kode_pemilik" msprop:Generator_ColumnPropNameInRow="temp_kode_pemilik" msprop:Generator_ColumnPropNameInTable="temp_kode_pemilikColumn" msprop:Generator_UserColumnName="temp_kode_pemilik">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kode_instansi" msprop:Generator_ColumnVarNameInTable="columntemp_kode_instansi" msprop:Generator_ColumnPropNameInRow="temp_kode_instansi" msprop:Generator_ColumnPropNameInTable="temp_kode_instansiColumn" msprop:Generator_UserColumnName="temp_kode_instansi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kode_wilayah" msprop:Generator_ColumnVarNameInTable="columntemp_kode_wilayah" msprop:Generator_ColumnPropNameInRow="temp_kode_wilayah" msprop:Generator_ColumnPropNameInTable="temp_kode_wilayahColumn" msprop:Generator_UserColumnName="temp_kode_wilayah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_saldo_akhir" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_akhir" msprop:Generator_ColumnPropNameInRow="temp_saldo_akhir" msprop:Generator_ColumnPropNameInTable="temp_saldo_akhirColumn" msprop:Generator_UserColumnName="temp_saldo_akhir" type="xs:decimal" />
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nominatif_kredit" msprop:Generator_TableClassName="nominatif_kreditDataTable" msprop:Generator_TableVarName="tablenominatif_kredit" msprop:Generator_TablePropName="nominatif_kredit" msprop:Generator_RowDeletingName="nominatif_kreditRowDeleting" msprop:Generator_RowChangingName="nominatif_kreditRowChanging" msprop:Generator_RowEvHandlerName="nominatif_kreditRowChangeEventHandler" msprop:Generator_RowDeletedName="nominatif_kreditRowDeleted" msprop:Generator_UserTableName="nominatif_kredit" msprop:Generator_RowChangedName="nominatif_kreditRowChanged" msprop:Generator_RowEvArgName="nominatif_kreditRowChangeEvent" msprop:Generator_RowClassName="nominatif_kreditRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_no_rekening" msprop:Generator_ColumnVarNameInTable="columntemp_no_rekening" msprop:Generator_ColumnPropNameInRow="temp_no_rekening" msprop:Generator_ColumnPropNameInTable="temp_no_rekeningColumn" msprop:Generator_UserColumnName="temp_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_no_alternatif" msprop:Generator_ColumnVarNameInTable="columntemp_no_alternatif" msprop:Generator_ColumnPropNameInRow="temp_no_alternatif" msprop:Generator_ColumnPropNameInTable="temp_no_alternatifColumn" msprop:Generator_UserColumnName="temp_no_alternatif">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kode_produk" msprop:Generator_ColumnVarNameInTable="columntemp_kode_produk" msprop:Generator_ColumnPropNameInRow="temp_kode_produk" msprop:Generator_ColumnPropNameInTable="temp_kode_produkColumn" msprop:Generator_UserColumnName="temp_kode_produk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_sistem_angsuran" msprop:Generator_ColumnVarNameInTable="columntemp_sistem_angsuran" msprop:Generator_ColumnPropNameInRow="temp_sistem_angsuran" msprop:Generator_ColumnPropNameInTable="temp_sistem_angsuranColumn" msprop:Generator_UserColumnName="temp_sistem_angsuran">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_jangka_waktu" msprop:Generator_ColumnVarNameInTable="columntemp_jangka_waktu" msprop:Generator_ColumnPropNameInRow="temp_jangka_waktu" msprop:Generator_ColumnPropNameInTable="temp_jangka_waktuColumn" msprop:Generator_UserColumnName="temp_jangka_waktu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_tanggal_jt" msprop:Generator_ColumnVarNameInTable="columntemp_tanggal_jt" msprop:Generator_ColumnPropNameInRow="temp_tanggal_jt" msprop:Generator_ColumnPropNameInTable="temp_tanggal_jtColumn" msprop:Generator_UserColumnName="temp_tanggal_jt" type="xs:dateTime" />
+              <xs:element name="temp_sistem_bunga" msprop:Generator_ColumnVarNameInTable="columntemp_sistem_bunga" msprop:Generator_ColumnPropNameInRow="temp_sistem_bunga" msprop:Generator_ColumnPropNameInTable="temp_sistem_bungaColumn" msprop:Generator_UserColumnName="temp_sistem_bunga">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_suku_bunga" msprop:Generator_ColumnVarNameInTable="columntemp_suku_bunga" msprop:Generator_ColumnPropNameInRow="temp_suku_bunga" msprop:Generator_ColumnPropNameInTable="temp_suku_bungaColumn" msprop:Generator_UserColumnName="temp_suku_bunga" type="xs:float" />
+              <xs:element name="temp_plafon_induk" msprop:Generator_ColumnVarNameInTable="columntemp_plafon_induk" msprop:Generator_ColumnPropNameInRow="temp_plafon_induk" msprop:Generator_ColumnPropNameInTable="temp_plafon_indukColumn" msprop:Generator_UserColumnName="temp_plafon_induk" type="xs:decimal" />
+              <xs:element name="temp_status" msprop:Generator_ColumnVarNameInTable="columntemp_status" msprop:Generator_ColumnPropNameInRow="temp_status" msprop:Generator_ColumnPropNameInTable="temp_statusColumn" msprop:Generator_UserColumnName="temp_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_tanggal_pencairan" msprop:Generator_ColumnVarNameInTable="columntemp_tanggal_pencairan" msprop:Generator_ColumnPropNameInRow="temp_tanggal_pencairan" msprop:Generator_ColumnPropNameInTable="temp_tanggal_pencairanColumn" msprop:Generator_UserColumnName="temp_tanggal_pencairan" type="xs:dateTime" />
+              <xs:element name="temp_jenis_kredit" msprop:Generator_ColumnVarNameInTable="columntemp_jenis_kredit" msprop:Generator_ColumnPropNameInRow="temp_jenis_kredit" msprop:Generator_ColumnPropNameInTable="temp_jenis_kreditColumn" msprop:Generator_UserColumnName="temp_jenis_kredit">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_golongan_debitur" msprop:Generator_ColumnVarNameInTable="columntemp_golongan_debitur" msprop:Generator_ColumnPropNameInRow="temp_golongan_debitur" msprop:Generator_ColumnPropNameInTable="temp_golongan_debiturColumn" msprop:Generator_UserColumnName="temp_golongan_debitur">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_jenis_penggunaan" msprop:Generator_ColumnVarNameInTable="columntemp_jenis_penggunaan" msprop:Generator_ColumnPropNameInRow="temp_jenis_penggunaan" msprop:Generator_ColumnPropNameInTable="temp_jenis_penggunaanColumn" msprop:Generator_UserColumnName="temp_jenis_penggunaan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_sektor_ekonomi" msprop:Generator_ColumnVarNameInTable="columntemp_sektor_ekonomi" msprop:Generator_ColumnPropNameInRow="temp_sektor_ekonomi" msprop:Generator_ColumnPropNameInTable="temp_sektor_ekonomiColumn" msprop:Generator_UserColumnName="temp_sektor_ekonomi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_jenis_usaha" msprop:Generator_ColumnVarNameInTable="columntemp_jenis_usaha" msprop:Generator_ColumnPropNameInRow="temp_jenis_usaha" msprop:Generator_ColumnPropNameInTable="temp_jenis_usahaColumn" msprop:Generator_UserColumnName="temp_jenis_usaha">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_sumber_dana" msprop:Generator_ColumnVarNameInTable="columntemp_sumber_dana" msprop:Generator_ColumnPropNameInRow="temp_sumber_dana" msprop:Generator_ColumnPropNameInTable="temp_sumber_danaColumn" msprop:Generator_UserColumnName="temp_sumber_dana">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kolektor" msprop:Generator_ColumnVarNameInTable="columntemp_kolektor" msprop:Generator_ColumnPropNameInRow="temp_kolektor" msprop:Generator_ColumnPropNameInTable="temp_kolektorColumn" msprop:Generator_UserColumnName="temp_kolektor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_instansi" msprop:Generator_ColumnVarNameInTable="columntemp_instansi" msprop:Generator_ColumnPropNameInRow="temp_instansi" msprop:Generator_ColumnPropNameInTable="temp_instansiColumn" msprop:Generator_UserColumnName="temp_instansi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_wilayah" msprop:Generator_ColumnVarNameInTable="columntemp_wilayah" msprop:Generator_ColumnPropNameInRow="temp_wilayah" msprop:Generator_ColumnPropNameInTable="temp_wilayahColumn" msprop:Generator_UserColumnName="temp_wilayah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_agunan" msprop:Generator_ColumnVarNameInTable="columntemp_agunan" msprop:Generator_ColumnPropNameInRow="temp_agunan" msprop:Generator_ColumnPropNameInTable="temp_agunanColumn" msprop:Generator_UserColumnName="temp_agunan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kecamatan" msprop:Generator_ColumnVarNameInTable="columntemp_kecamatan" msprop:Generator_ColumnPropNameInRow="temp_kecamatan" msprop:Generator_ColumnPropNameInTable="temp_kecamatanColumn" msprop:Generator_UserColumnName="temp_kecamatan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_kelurahan" msprop:Generator_ColumnVarNameInTable="columntemp_kelurahan" msprop:Generator_ColumnPropNameInRow="temp_kelurahan" msprop:Generator_ColumnPropNameInTable="temp_kelurahanColumn" msprop:Generator_UserColumnName="temp_kelurahan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_keterkaitan" msprop:Generator_ColumnVarNameInTable="columntemp_keterkaitan" msprop:Generator_ColumnPropNameInRow="temp_keterkaitan" msprop:Generator_ColumnPropNameInTable="temp_keterkaitanColumn" msprop:Generator_UserColumnName="temp_keterkaitan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_jenis_kelamin" msprop:Generator_ColumnVarNameInTable="columntemp_jenis_kelamin" msprop:Generator_ColumnPropNameInRow="temp_jenis_kelamin" msprop:Generator_ColumnPropNameInTable="temp_jenis_kelaminColumn" msprop:Generator_UserColumnName="temp_jenis_kelamin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_nama_nasabah" msprop:Generator_ColumnVarNameInTable="columntemp_nama_nasabah" msprop:Generator_ColumnPropNameInRow="temp_nama_nasabah" msprop:Generator_ColumnPropNameInTable="temp_nama_nasabahColumn" msprop:Generator_UserColumnName="temp_nama_nasabah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_alamat" msprop:Generator_ColumnVarNameInTable="columntemp_alamat" msprop:Generator_ColumnPropNameInRow="temp_alamat" msprop:Generator_ColumnPropNameInTable="temp_alamatColumn" msprop:Generator_UserColumnName="temp_alamat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_waktu_pencairan" msprop:Generator_ColumnVarNameInTable="columntemp_waktu_pencairan" msprop:Generator_ColumnPropNameInRow="temp_waktu_pencairan" msprop:Generator_ColumnPropNameInTable="temp_waktu_pencairanColumn" msprop:Generator_UserColumnName="temp_waktu_pencairan" type="xs:dateTime" />
+              <xs:element name="temp_baki_debet" msprop:Generator_ColumnVarNameInTable="columntemp_baki_debet" msprop:Generator_ColumnPropNameInRow="temp_baki_debet" msprop:Generator_ColumnPropNameInTable="temp_baki_debetColumn" msprop:Generator_UserColumnName="temp_baki_debet" type="xs:decimal" />
+              <xs:element name="temp_tgk_pokok" msprop:Generator_ColumnVarNameInTable="columntemp_tgk_pokok" msprop:Generator_ColumnPropNameInRow="temp_tgk_pokok" msprop:Generator_ColumnPropNameInTable="temp_tgk_pokokColumn" msprop:Generator_UserColumnName="temp_tgk_pokok" type="xs:decimal" />
+              <xs:element name="temp_frek_pokok" msprop:Generator_ColumnVarNameInTable="columntemp_frek_pokok" msprop:Generator_ColumnPropNameInRow="temp_frek_pokok" msprop:Generator_ColumnPropNameInTable="temp_frek_pokokColumn" msprop:Generator_UserColumnName="temp_frek_pokok" type="xs:float" />
+              <xs:element name="temp_tgk_bunga" msprop:Generator_ColumnVarNameInTable="columntemp_tgk_bunga" msprop:Generator_ColumnPropNameInRow="temp_tgk_bunga" msprop:Generator_ColumnPropNameInTable="temp_tgk_bungaColumn" msprop:Generator_UserColumnName="temp_tgk_bunga" type="xs:decimal" />
+              <xs:element name="temp_frek_bunga" msprop:Generator_ColumnVarNameInTable="columntemp_frek_bunga" msprop:Generator_ColumnPropNameInRow="temp_frek_bunga" msprop:Generator_ColumnPropNameInTable="temp_frek_bungaColumn" msprop:Generator_UserColumnName="temp_frek_bunga" type="xs:float" />
+              <xs:element name="temp_jml_hari" msprop:Generator_ColumnVarNameInTable="columntemp_jml_hari" msprop:Generator_ColumnPropNameInRow="temp_jml_hari" msprop:Generator_ColumnPropNameInTable="temp_jml_hariColumn" msprop:Generator_UserColumnName="temp_jml_hari" type="xs:decimal" />
+              <xs:element name="temp_kolek" msprop:Generator_ColumnVarNameInTable="columntemp_kolek" msprop:Generator_ColumnPropNameInRow="temp_kolek" msprop:Generator_ColumnPropNameInTable="temp_kolekColumn" msprop:Generator_UserColumnName="temp_kolek">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rincian_transaksi_tabungan" msprop:Generator_TableClassName="rincian_transaksi_tabunganDataTable" msprop:Generator_TableVarName="tablerincian_transaksi_tabungan" msprop:Generator_TablePropName="rincian_transaksi_tabungan" msprop:Generator_RowDeletingName="rincian_transaksi_tabunganRowDeleting" msprop:Generator_RowChangingName="rincian_transaksi_tabunganRowChanging" msprop:Generator_RowEvHandlerName="rincian_transaksi_tabunganRowChangeEventHandler" msprop:Generator_RowDeletedName="rincian_transaksi_tabunganRowDeleted" msprop:Generator_UserTableName="rincian_transaksi_tabungan" msprop:Generator_RowChangedName="rincian_transaksi_tabunganRowChanged" msprop:Generator_RowEvArgName="rincian_transaksi_tabunganRowChangeEvent" msprop:Generator_RowClassName="rincian_transaksi_tabunganRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tab_stat_no_rekening" msprop:Generator_ColumnVarNameInTable="columntab_stat_no_rekening" msprop:Generator_ColumnPropNameInRow="tab_stat_no_rekening" msprop:Generator_ColumnPropNameInTable="tab_stat_no_rekeningColumn" msprop:Generator_UserColumnName="tab_stat_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="namanasabah" msprop:Generator_ColumnVarNameInTable="columnnamanasabah" msprop:Generator_ColumnPropNameInRow="namanasabah" msprop:Generator_ColumnPropNameInTable="namanasabahColumn" msprop:Generator_UserColumnName="namanasabah" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tab_stat_tanggal" msprop:Generator_ColumnVarNameInTable="columntab_stat_tanggal" msprop:Generator_ColumnPropNameInRow="tab_stat_tanggal" msprop:Generator_ColumnPropNameInTable="tab_stat_tanggalColumn" msprop:Generator_UserColumnName="tab_stat_tanggal" type="xs:dateTime" />
+              <xs:element name="tab_stat_kode" msprop:Generator_ColumnVarNameInTable="columntab_stat_kode" msprop:Generator_ColumnPropNameInRow="tab_stat_kode" msprop:Generator_ColumnPropNameInTable="tab_stat_kodeColumn" msprop:Generator_UserColumnName="tab_stat_kode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tab_stat_debet" msprop:Generator_ColumnVarNameInTable="columntab_stat_debet" msprop:Generator_ColumnPropNameInRow="tab_stat_debet" msprop:Generator_ColumnPropNameInTable="tab_stat_debetColumn" msprop:Generator_UserColumnName="tab_stat_debet" type="xs:decimal" />
+              <xs:element name="tab_stat_kredit" msprop:Generator_ColumnVarNameInTable="columntab_stat_kredit" msprop:Generator_ColumnPropNameInRow="tab_stat_kredit" msprop:Generator_ColumnPropNameInTable="tab_stat_kreditColumn" msprop:Generator_UserColumnName="tab_stat_kredit" type="xs:decimal" />
+              <xs:element name="tab_stat_saldo" msprop:Generator_ColumnVarNameInTable="columntab_stat_saldo" msprop:Generator_ColumnPropNameInRow="tab_stat_saldo" msprop:Generator_ColumnPropNameInTable="tab_stat_saldoColumn" msprop:Generator_UserColumnName="tab_stat_saldo" type="xs:decimal" />
+              <xs:element name="jenis" msprop:Generator_ColumnVarNameInTable="columnjenis" msprop:Generator_ColumnPropNameInRow="jenis" msprop:Generator_ColumnPropNameInTable="jenisColumn" msprop:Generator_UserColumnName="jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pembukaan" msprop:Generator_ColumnVarNameInTable="columnpembukaan" msprop:Generator_ColumnPropNameInRow="pembukaan" msprop:Generator_ColumnPropNameInTable="pembukaanColumn" msprop:Generator_UserColumnName="pembukaan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_no_alternatif" msprop:Generator_ColumnVarNameInTable="columnrek_tab_no_alternatif" msprop:Generator_ColumnPropNameInRow="rek_tab_no_alternatif" msprop:Generator_ColumnPropNameInTable="rek_tab_no_alternatifColumn" msprop:Generator_UserColumnName="rek_tab_no_alternatif">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rincian_transaksi_kredit" msprop:Generator_TableClassName="rincian_transaksi_kreditDataTable" msprop:Generator_TableVarName="tablerincian_transaksi_kredit" msprop:Generator_TablePropName="rincian_transaksi_kredit" msprop:Generator_RowDeletingName="rincian_transaksi_kreditRowDeleting" msprop:Generator_RowChangingName="rincian_transaksi_kreditRowChanging" msprop:Generator_RowEvHandlerName="rincian_transaksi_kreditRowChangeEventHandler" msprop:Generator_RowDeletedName="rincian_transaksi_kreditRowDeleted" msprop:Generator_UserTableName="rincian_transaksi_kredit" msprop:Generator_RowChangedName="rincian_transaksi_kreditRowChanged" msprop:Generator_RowEvArgName="rincian_transaksi_kreditRowChangeEvent" msprop:Generator_RowClassName="rincian_transaksi_kreditRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pencairan_no_rekening" msprop:Generator_ColumnVarNameInTable="columnpencairan_no_rekening" msprop:Generator_ColumnPropNameInRow="pencairan_no_rekening" msprop:Generator_ColumnPropNameInTable="pencairan_no_rekeningColumn" msprop:Generator_UserColumnName="pencairan_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nasabah_nama1" msprop:Generator_ColumnVarNameInTable="columnnasabah_nama1" msprop:Generator_ColumnPropNameInRow="nasabah_nama1" msprop:Generator_ColumnPropNameInTable="nasabah_nama1Column" msprop:Generator_UserColumnName="nasabah_nama1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nasabah_tanggal_lahir" msprop:Generator_ColumnVarNameInTable="columnnasabah_tanggal_lahir" msprop:Generator_ColumnPropNameInRow="nasabah_tanggal_lahir" msprop:Generator_ColumnPropNameInTable="nasabah_tanggal_lahirColumn" msprop:Generator_UserColumnName="nasabah_tanggal_lahir" type="xs:dateTime" />
+              <xs:element name="pencairan_waktu" msprop:Generator_ColumnVarNameInTable="columnpencairan_waktu" msprop:Generator_ColumnPropNameInRow="pencairan_waktu" msprop:Generator_ColumnPropNameInTable="pencairan_waktuColumn" msprop:Generator_UserColumnName="pencairan_waktu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_kre_jangka_waktu" msprop:Generator_ColumnVarNameInTable="columnrek_kre_jangka_waktu" msprop:Generator_ColumnPropNameInRow="rek_kre_jangka_waktu" msprop:Generator_ColumnPropNameInTable="rek_kre_jangka_waktuColumn" msprop:Generator_UserColumnName="rek_kre_jangka_waktu" type="xs:decimal" />
+              <xs:element name="rek_kre_suku_bunga" msprop:Generator_ColumnVarNameInTable="columnrek_kre_suku_bunga" msprop:Generator_ColumnPropNameInRow="rek_kre_suku_bunga" msprop:Generator_ColumnPropNameInTable="rek_kre_suku_bungaColumn" msprop:Generator_UserColumnName="rek_kre_suku_bunga" type="xs:float" />
+              <xs:element name="pencairan_kode_transaksi" msprop:Generator_ColumnVarNameInTable="columnpencairan_kode_transaksi" msprop:Generator_ColumnPropNameInRow="pencairan_kode_transaksi" msprop:Generator_ColumnPropNameInTable="pencairan_kode_transaksiColumn" msprop:Generator_UserColumnName="pencairan_kode_transaksi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pencairan_jml_pencairan" msprop:Generator_ColumnVarNameInTable="columnpencairan_jml_pencairan" msprop:Generator_ColumnPropNameInRow="pencairan_jml_pencairan" msprop:Generator_ColumnPropNameInTable="pencairan_jml_pencairanColumn" msprop:Generator_UserColumnName="pencairan_jml_pencairan" type="xs:decimal" />
+              <xs:element name="pencairan_provisi" msprop:Generator_ColumnVarNameInTable="columnpencairan_provisi" msprop:Generator_ColumnPropNameInRow="pencairan_provisi" msprop:Generator_ColumnPropNameInTable="pencairan_provisiColumn" msprop:Generator_UserColumnName="pencairan_provisi" type="xs:decimal" />
+              <xs:element name="pencairan_administrasi" msprop:Generator_ColumnVarNameInTable="columnpencairan_administrasi" msprop:Generator_ColumnPropNameInRow="pencairan_administrasi" msprop:Generator_ColumnPropNameInTable="pencairan_administrasiColumn" msprop:Generator_UserColumnName="pencairan_administrasi" type="xs:decimal" />
+              <xs:element name="pencairan_premi" msprop:Generator_ColumnVarNameInTable="columnpencairan_premi" msprop:Generator_ColumnPropNameInRow="pencairan_premi" msprop:Generator_ColumnPropNameInTable="pencairan_premiColumn" msprop:Generator_UserColumnName="pencairan_premi" type="xs:decimal" />
+              <xs:element name="pencairan_notaris" msprop:Generator_ColumnVarNameInTable="columnpencairan_notaris" msprop:Generator_ColumnPropNameInRow="pencairan_notaris" msprop:Generator_ColumnPropNameInTable="pencairan_notarisColumn" msprop:Generator_UserColumnName="pencairan_notaris" type="xs:decimal" />
+              <xs:element name="pencairan_materai" msprop:Generator_ColumnVarNameInTable="columnpencairan_materai" msprop:Generator_ColumnPropNameInRow="pencairan_materai" msprop:Generator_ColumnPropNameInTable="pencairan_materaiColumn" msprop:Generator_UserColumnName="pencairan_materai" type="xs:decimal" />
+              <xs:element name="pencairan_lain" msprop:Generator_ColumnVarNameInTable="columnpencairan_lain" msprop:Generator_ColumnPropNameInRow="pencairan_lain" msprop:Generator_ColumnPropNameInTable="pencairan_lainColumn" msprop:Generator_UserColumnName="pencairan_lain" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="statement_kredit" msprop:Generator_TableClassName="statement_kreditDataTable" msprop:Generator_TableVarName="tablestatement_kredit" msprop:Generator_TablePropName="statement_kredit" msprop:Generator_RowDeletingName="statement_kreditRowDeleting" msprop:Generator_RowChangingName="statement_kreditRowChanging" msprop:Generator_RowEvHandlerName="statement_kreditRowChangeEventHandler" msprop:Generator_RowDeletedName="statement_kreditRowDeleted" msprop:Generator_UserTableName="statement_kredit" msprop:Generator_RowChangedName="statement_kreditRowChanged" msprop:Generator_RowEvArgName="statement_kreditRowChangeEvent" msprop:Generator_RowClassName="statement_kreditRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kre_stat_no_rekening" msprop:Generator_ColumnVarNameInTable="columnkre_stat_no_rekening" msprop:Generator_ColumnPropNameInRow="kre_stat_no_rekening" msprop:Generator_ColumnPropNameInTable="kre_stat_no_rekeningColumn" msprop:Generator_UserColumnName="kre_stat_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kre_stat_kode" msprop:Generator_ColumnVarNameInTable="columnkre_stat_kode" msprop:Generator_ColumnPropNameInRow="kre_stat_kode" msprop:Generator_ColumnPropNameInTable="kre_stat_kodeColumn" msprop:Generator_UserColumnName="kre_stat_kode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kre_stat_uraian" msprop:Generator_ColumnVarNameInTable="columnkre_stat_uraian" msprop:Generator_ColumnPropNameInRow="kre_stat_uraian" msprop:Generator_ColumnPropNameInTable="kre_stat_uraianColumn" msprop:Generator_UserColumnName="kre_stat_uraian">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kre_stat_realisasi" msprop:Generator_ColumnVarNameInTable="columnkre_stat_realisasi" msprop:Generator_ColumnPropNameInRow="kre_stat_realisasi" msprop:Generator_ColumnPropNameInTable="kre_stat_realisasiColumn" msprop:Generator_UserColumnName="kre_stat_realisasi" type="xs:decimal" />
+              <xs:element name="kre_stat_tag_pokok" msprop:Generator_ColumnVarNameInTable="columnkre_stat_tag_pokok" msprop:Generator_ColumnPropNameInRow="kre_stat_tag_pokok" msprop:Generator_ColumnPropNameInTable="kre_stat_tag_pokokColumn" msprop:Generator_UserColumnName="kre_stat_tag_pokok" type="xs:decimal" />
+              <xs:element name="kre_stat_tag_bunga" msprop:Generator_ColumnVarNameInTable="columnkre_stat_tag_bunga" msprop:Generator_ColumnPropNameInRow="kre_stat_tag_bunga" msprop:Generator_ColumnPropNameInTable="kre_stat_tag_bungaColumn" msprop:Generator_UserColumnName="kre_stat_tag_bunga" type="xs:decimal" />
+              <xs:element name="kre_stat_angs_pokok" msprop:Generator_ColumnVarNameInTable="columnkre_stat_angs_pokok" msprop:Generator_ColumnPropNameInRow="kre_stat_angs_pokok" msprop:Generator_ColumnPropNameInTable="kre_stat_angs_pokokColumn" msprop:Generator_UserColumnName="kre_stat_angs_pokok" type="xs:decimal" />
+              <xs:element name="kre_stat_angs_bunga" msprop:Generator_ColumnVarNameInTable="columnkre_stat_angs_bunga" msprop:Generator_ColumnPropNameInRow="kre_stat_angs_bunga" msprop:Generator_ColumnPropNameInTable="kre_stat_angs_bungaColumn" msprop:Generator_UserColumnName="kre_stat_angs_bunga" type="xs:decimal" />
+              <xs:element name="kre_stat_denda" msprop:Generator_ColumnVarNameInTable="columnkre_stat_denda" msprop:Generator_ColumnPropNameInRow="kre_stat_denda" msprop:Generator_ColumnPropNameInTable="kre_stat_dendaColumn" msprop:Generator_UserColumnName="kre_stat_denda" type="xs:decimal" />
+              <xs:element name="bakidebet" msprop:Generator_ColumnVarNameInTable="columnbakidebet" msprop:Generator_ColumnPropNameInRow="bakidebet" msprop:Generator_ColumnPropNameInTable="bakidebetColumn" msprop:Generator_UserColumnName="bakidebet" type="xs:decimal" minOccurs="0" />
+              <xs:element name="kre_stat_waktu" msprop:Generator_ColumnVarNameInTable="columnkre_stat_waktu" msprop:Generator_ColumnPropNameInRow="kre_stat_waktu" msprop:Generator_ColumnPropNameInTable="kre_stat_waktuColumn" msprop:Generator_UserColumnName="kre_stat_waktu" type="xs:dateTime" />
+              <xs:element name="kre_stat_jenis" msprop:Generator_ColumnVarNameInTable="columnkre_stat_jenis" msprop:Generator_ColumnPropNameInRow="kre_stat_jenis" msprop:Generator_ColumnPropNameInTable="kre_stat_jenisColumn" msprop:Generator_UserColumnName="kre_stat_jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tunggakan_pokok" msprop:Generator_ColumnVarNameInTable="columntunggakan_pokok" msprop:Generator_ColumnPropNameInRow="tunggakan_pokok" msprop:Generator_ColumnPropNameInTable="tunggakan_pokokColumn" msprop:Generator_UserColumnName="tunggakan_pokok" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tunggakan_bunga" msprop:Generator_ColumnVarNameInTable="columntunggakan_bunga" msprop:Generator_ColumnPropNameInRow="tunggakan_bunga" msprop:Generator_ColumnPropNameInTable="tunggakan_bungaColumn" msprop:Generator_UserColumnName="tunggakan_bunga" type="xs:decimal" minOccurs="0" />
+              <xs:element name="kolek" msprop:Generator_ColumnVarNameInTable="columnkolek" msprop:Generator_ColumnPropNameInRow="kolek" msprop:Generator_ColumnPropNameInTable="kolekColumn" msprop:Generator_UserColumnName="kolek" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="temp_neraca" msprop:Generator_TableClassName="temp_neracaDataTable" msprop:Generator_TableVarName="tabletemp_neraca" msprop:Generator_RowChangedName="temp_neracaRowChanged" msprop:Generator_TablePropName="temp_neraca" msprop:Generator_RowDeletingName="temp_neracaRowDeleting" msprop:Generator_RowChangingName="temp_neracaRowChanging" msprop:Generator_RowEvHandlerName="temp_neracaRowChangeEventHandler" msprop:Generator_RowDeletedName="temp_neracaRowDeleted" msprop:Generator_RowClassName="temp_neracaRow" msprop:Generator_UserTableName="temp_neraca" msprop:Generator_RowEvArgName="temp_neracaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_id" msprop:Generator_ColumnVarNameInTable="columntemp_id" msprop:Generator_ColumnPropNameInRow="temp_id" msprop:Generator_ColumnPropNameInTable="temp_idColumn" msprop:Generator_UserColumnName="temp_id" type="xs:int" />
+              <xs:element name="temp_perkiraan_kode" msprop:Generator_ColumnVarNameInTable="columntemp_perkiraan_kode" msprop:Generator_ColumnPropNameInRow="temp_perkiraan_kode" msprop:Generator_ColumnPropNameInTable="temp_perkiraan_kodeColumn" msprop:Generator_UserColumnName="temp_perkiraan_kode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_perkiraan_umum" msprop:Generator_ColumnVarNameInTable="columntemp_perkiraan_umum" msprop:Generator_ColumnPropNameInRow="temp_perkiraan_umum" msprop:Generator_ColumnPropNameInTable="temp_perkiraan_umumColumn" msprop:Generator_UserColumnName="temp_perkiraan_umum" type="xs:int" />
+              <xs:element name="temp_perkiraan_nama" msprop:Generator_ColumnVarNameInTable="columntemp_perkiraan_nama" msprop:Generator_ColumnPropNameInRow="temp_perkiraan_nama" msprop:Generator_ColumnPropNameInTable="temp_perkiraan_namaColumn" msprop:Generator_UserColumnName="temp_perkiraan_nama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_saldo_awal" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_awal" msprop:Generator_ColumnPropNameInRow="temp_saldo_awal" msprop:Generator_ColumnPropNameInTable="temp_saldo_awalColumn" msprop:Generator_UserColumnName="temp_saldo_awal" type="xs:decimal" />
+              <xs:element name="temp_debet" msprop:Generator_ColumnVarNameInTable="columntemp_debet" msprop:Generator_ColumnPropNameInRow="temp_debet" msprop:Generator_ColumnPropNameInTable="temp_debetColumn" msprop:Generator_UserColumnName="temp_debet" type="xs:decimal" />
+              <xs:element name="temp_kredit" msprop:Generator_ColumnVarNameInTable="columntemp_kredit" msprop:Generator_ColumnPropNameInRow="temp_kredit" msprop:Generator_ColumnPropNameInTable="temp_kreditColumn" msprop:Generator_UserColumnName="temp_kredit" type="xs:decimal" />
+              <xs:element name="temp_saldo_akhir" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_akhir" msprop:Generator_ColumnPropNameInRow="temp_saldo_akhir" msprop:Generator_ColumnPropNameInTable="temp_saldo_akhirColumn" msprop:Generator_UserColumnName="temp_saldo_akhir" type="xs:decimal" />
+              <xs:element name="temp_jenis" msprop:Generator_ColumnVarNameInTable="columntemp_jenis" msprop:Generator_ColumnPropNameInRow="temp_jenis" msprop:Generator_ColumnPropNameInTable="temp_jenisColumn" msprop:Generator_UserColumnName="temp_jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_saldo_mutasi" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_mutasi" msprop:Generator_ColumnPropNameInRow="temp_saldo_mutasi" msprop:Generator_ColumnPropNameInTable="temp_saldo_mutasiColumn" msprop:Generator_UserColumnName="temp_saldo_mutasi" type="xs:decimal" />
+              <xs:element name="temp_mutasi" msprop:Generator_ColumnVarNameInTable="columntemp_mutasi" msprop:Generator_ColumnPropNameInRow="temp_mutasi" msprop:Generator_ColumnPropNameInTable="temp_mutasiColumn" msprop:Generator_UserColumnName="temp_mutasi" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="temp_neraca2" msprop:Generator_TableClassName="temp_neraca2DataTable" msprop:Generator_TableVarName="tabletemp_neraca2" msprop:Generator_TablePropName="temp_neraca2" msprop:Generator_RowDeletingName="temp_neraca2RowDeleting" msprop:Generator_RowChangingName="temp_neraca2RowChanging" msprop:Generator_RowEvHandlerName="temp_neraca2RowChangeEventHandler" msprop:Generator_RowDeletedName="temp_neraca2RowDeleted" msprop:Generator_UserTableName="temp_neraca2" msprop:Generator_RowChangedName="temp_neraca2RowChanged" msprop:Generator_RowEvArgName="temp_neraca2RowChangeEvent" msprop:Generator_RowClassName="temp_neraca2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_id" msprop:Generator_ColumnVarNameInTable="columntemp_id" msprop:Generator_ColumnPropNameInRow="temp_id" msprop:Generator_ColumnPropNameInTable="temp_idColumn" msprop:Generator_UserColumnName="temp_id" type="xs:int" />
+              <xs:element name="temp_perkiraan_kode" msprop:Generator_ColumnVarNameInTable="columntemp_perkiraan_kode" msprop:Generator_ColumnPropNameInRow="temp_perkiraan_kode" msprop:Generator_ColumnPropNameInTable="temp_perkiraan_kodeColumn" msprop:Generator_UserColumnName="temp_perkiraan_kode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_perkiraan_umum" msprop:Generator_ColumnVarNameInTable="columntemp_perkiraan_umum" msprop:Generator_ColumnPropNameInRow="temp_perkiraan_umum" msprop:Generator_ColumnPropNameInTable="temp_perkiraan_umumColumn" msprop:Generator_UserColumnName="temp_perkiraan_umum" type="xs:int" />
+              <xs:element name="temp_perkiraan_nama" msprop:Generator_ColumnVarNameInTable="columntemp_perkiraan_nama" msprop:Generator_ColumnPropNameInRow="temp_perkiraan_nama" msprop:Generator_ColumnPropNameInTable="temp_perkiraan_namaColumn" msprop:Generator_UserColumnName="temp_perkiraan_nama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_saldo_awal" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_awal" msprop:Generator_ColumnPropNameInRow="temp_saldo_awal" msprop:Generator_ColumnPropNameInTable="temp_saldo_awalColumn" msprop:Generator_UserColumnName="temp_saldo_awal" type="xs:decimal" />
+              <xs:element name="temp_debet" msprop:Generator_ColumnVarNameInTable="columntemp_debet" msprop:Generator_ColumnPropNameInRow="temp_debet" msprop:Generator_ColumnPropNameInTable="temp_debetColumn" msprop:Generator_UserColumnName="temp_debet" type="xs:decimal" />
+              <xs:element name="temp_kredit" msprop:Generator_ColumnVarNameInTable="columntemp_kredit" msprop:Generator_ColumnPropNameInRow="temp_kredit" msprop:Generator_ColumnPropNameInTable="temp_kreditColumn" msprop:Generator_UserColumnName="temp_kredit" type="xs:decimal" />
+              <xs:element name="temp_saldo_akhir" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_akhir" msprop:Generator_ColumnPropNameInRow="temp_saldo_akhir" msprop:Generator_ColumnPropNameInTable="temp_saldo_akhirColumn" msprop:Generator_UserColumnName="temp_saldo_akhir" type="xs:decimal" />
+              <xs:element name="temp_jenis" msprop:Generator_ColumnVarNameInTable="columntemp_jenis" msprop:Generator_ColumnPropNameInRow="temp_jenis" msprop:Generator_ColumnPropNameInTable="temp_jenisColumn" msprop:Generator_UserColumnName="temp_jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_mutasi" msprop:Generator_ColumnVarNameInTable="columntemp_mutasi" msprop:Generator_ColumnPropNameInRow="temp_mutasi" msprop:Generator_ColumnPropNameInTable="temp_mutasiColumn" msprop:Generator_UserColumnName="temp_mutasi" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="temp_deret_harian" msprop:Generator_TableClassName="temp_deret_harianDataTable" msprop:Generator_TableVarName="tabletemp_deret_harian" msprop:Generator_RowChangedName="temp_deret_harianRowChanged" msprop:Generator_TablePropName="temp_deret_harian" msprop:Generator_RowDeletingName="temp_deret_harianRowDeleting" msprop:Generator_RowChangingName="temp_deret_harianRowChanging" msprop:Generator_RowEvHandlerName="temp_deret_harianRowChangeEventHandler" msprop:Generator_RowDeletedName="temp_deret_harianRowDeleted" msprop:Generator_RowClassName="temp_deret_harianRow" msprop:Generator_UserTableName="temp_deret_harian" msprop:Generator_RowEvArgName="temp_deret_harianRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="deret_id" msprop:Generator_ColumnVarNameInTable="columnderet_id" msprop:Generator_ColumnPropNameInRow="deret_id" msprop:Generator_ColumnPropNameInTable="deret_idColumn" msprop:Generator_UserColumnName="deret_id" type="xs:int" />
+              <xs:element name="deret_perkiraan_kode" msprop:Generator_ColumnVarNameInTable="columnderet_perkiraan_kode" msprop:Generator_ColumnPropNameInRow="deret_perkiraan_kode" msprop:Generator_ColumnPropNameInTable="deret_perkiraan_kodeColumn" msprop:Generator_UserColumnName="deret_perkiraan_kode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deret_perkiraan_nama" msprop:Generator_ColumnVarNameInTable="columnderet_perkiraan_nama" msprop:Generator_ColumnPropNameInRow="deret_perkiraan_nama" msprop:Generator_ColumnPropNameInTable="deret_perkiraan_namaColumn" msprop:Generator_UserColumnName="deret_perkiraan_nama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deret_perkiraan_sandi" msprop:Generator_ColumnVarNameInTable="columnderet_perkiraan_sandi" msprop:Generator_ColumnPropNameInRow="deret_perkiraan_sandi" msprop:Generator_ColumnPropNameInTable="deret_perkiraan_sandiColumn" msprop:Generator_UserColumnName="deret_perkiraan_sandi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deret_januari" msprop:Generator_ColumnVarNameInTable="columnderet_januari" msprop:Generator_ColumnPropNameInRow="deret_januari" msprop:Generator_ColumnPropNameInTable="deret_januariColumn" msprop:Generator_UserColumnName="deret_januari" type="xs:decimal" />
+              <xs:element name="deret_februari" msprop:Generator_ColumnVarNameInTable="columnderet_februari" msprop:Generator_ColumnPropNameInRow="deret_februari" msprop:Generator_ColumnPropNameInTable="deret_februariColumn" msprop:Generator_UserColumnName="deret_februari" type="xs:decimal" />
+              <xs:element name="deret_maret" msprop:Generator_ColumnVarNameInTable="columnderet_maret" msprop:Generator_ColumnPropNameInRow="deret_maret" msprop:Generator_ColumnPropNameInTable="deret_maretColumn" msprop:Generator_UserColumnName="deret_maret" type="xs:decimal" />
+              <xs:element name="deret_april" msprop:Generator_ColumnVarNameInTable="columnderet_april" msprop:Generator_ColumnPropNameInRow="deret_april" msprop:Generator_ColumnPropNameInTable="deret_aprilColumn" msprop:Generator_UserColumnName="deret_april" type="xs:decimal" />
+              <xs:element name="deret_mei" msprop:Generator_ColumnVarNameInTable="columnderet_mei" msprop:Generator_ColumnPropNameInRow="deret_mei" msprop:Generator_ColumnPropNameInTable="deret_meiColumn" msprop:Generator_UserColumnName="deret_mei" type="xs:decimal" />
+              <xs:element name="deret_juni" msprop:Generator_ColumnVarNameInTable="columnderet_juni" msprop:Generator_ColumnPropNameInRow="deret_juni" msprop:Generator_ColumnPropNameInTable="deret_juniColumn" msprop:Generator_UserColumnName="deret_juni" type="xs:decimal" />
+              <xs:element name="deret_juli" msprop:Generator_ColumnVarNameInTable="columnderet_juli" msprop:Generator_ColumnPropNameInRow="deret_juli" msprop:Generator_ColumnPropNameInTable="deret_juliColumn" msprop:Generator_UserColumnName="deret_juli" type="xs:decimal" />
+              <xs:element name="deret_agustus" msprop:Generator_ColumnVarNameInTable="columnderet_agustus" msprop:Generator_ColumnPropNameInRow="deret_agustus" msprop:Generator_ColumnPropNameInTable="deret_agustusColumn" msprop:Generator_UserColumnName="deret_agustus" type="xs:decimal" />
+              <xs:element name="deret_september" msprop:Generator_ColumnVarNameInTable="columnderet_september" msprop:Generator_ColumnPropNameInRow="deret_september" msprop:Generator_ColumnPropNameInTable="deret_septemberColumn" msprop:Generator_UserColumnName="deret_september" type="xs:decimal" />
+              <xs:element name="deret_oktober" msprop:Generator_ColumnVarNameInTable="columnderet_oktober" msprop:Generator_ColumnPropNameInRow="deret_oktober" msprop:Generator_ColumnPropNameInTable="deret_oktoberColumn" msprop:Generator_UserColumnName="deret_oktober" type="xs:decimal" />
+              <xs:element name="deret_november" msprop:Generator_ColumnVarNameInTable="columnderet_november" msprop:Generator_ColumnPropNameInRow="deret_november" msprop:Generator_ColumnPropNameInTable="deret_novemberColumn" msprop:Generator_UserColumnName="deret_november" type="xs:decimal" />
+              <xs:element name="deret_desember" msprop:Generator_ColumnVarNameInTable="columnderet_desember" msprop:Generator_ColumnPropNameInRow="deret_desember" msprop:Generator_ColumnPropNameInTable="deret_desemberColumn" msprop:Generator_UserColumnName="deret_desember" type="xs:decimal" />
+              <xs:element name="deret_username" msprop:Generator_ColumnVarNameInTable="columnderet_username" msprop:Generator_ColumnPropNameInRow="deret_username" msprop:Generator_ColumnPropNameInTable="deret_usernameColumn" msprop:Generator_UserColumnName="deret_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deret_jenis" msprop:Generator_ColumnVarNameInTable="columnderet_jenis" msprop:Generator_ColumnPropNameInRow="deret_jenis" msprop:Generator_ColumnPropNameInTable="deret_jenisColumn" msprop:Generator_UserColumnName="deret_jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deret_total" msprop:Generator_ColumnVarNameInTable="columnderet_total" msprop:Generator_ColumnPropNameInRow="deret_total" msprop:Generator_ColumnPropNameInTable="deret_totalColumn" msprop:Generator_UserColumnName="deret_total" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="temp_rincian_mutasi" msprop:Generator_TableClassName="temp_rincian_mutasiDataTable" msprop:Generator_TableVarName="tabletemp_rincian_mutasi" msprop:Generator_RowChangedName="temp_rincian_mutasiRowChanged" msprop:Generator_TablePropName="temp_rincian_mutasi" msprop:Generator_RowDeletingName="temp_rincian_mutasiRowDeleting" msprop:Generator_RowChangingName="temp_rincian_mutasiRowChanging" msprop:Generator_RowEvHandlerName="temp_rincian_mutasiRowChangeEventHandler" msprop:Generator_RowDeletedName="temp_rincian_mutasiRowDeleted" msprop:Generator_RowClassName="temp_rincian_mutasiRow" msprop:Generator_UserTableName="temp_rincian_mutasi" msprop:Generator_RowEvArgName="temp_rincian_mutasiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_tanggal" msprop:Generator_ColumnVarNameInTable="columntemp_tanggal" msprop:Generator_ColumnPropNameInRow="temp_tanggal" msprop:Generator_ColumnPropNameInTable="temp_tanggalColumn" msprop:Generator_UserColumnName="temp_tanggal" type="xs:dateTime" />
+              <xs:element name="temp_saldo_awal" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_awal" msprop:Generator_ColumnPropNameInRow="temp_saldo_awal" msprop:Generator_ColumnPropNameInTable="temp_saldo_awalColumn" msprop:Generator_UserColumnName="temp_saldo_awal" type="xs:decimal" />
+              <xs:element name="temp_debet" msprop:Generator_ColumnVarNameInTable="columntemp_debet" msprop:Generator_ColumnPropNameInRow="temp_debet" msprop:Generator_ColumnPropNameInTable="temp_debetColumn" msprop:Generator_UserColumnName="temp_debet" type="xs:decimal" />
+              <xs:element name="temp_kredit" msprop:Generator_ColumnVarNameInTable="columntemp_kredit" msprop:Generator_ColumnPropNameInRow="temp_kredit" msprop:Generator_ColumnPropNameInTable="temp_kreditColumn" msprop:Generator_UserColumnName="temp_kredit" type="xs:decimal" />
+              <xs:element name="temp_saldo_akhir" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_akhir" msprop:Generator_ColumnPropNameInRow="temp_saldo_akhir" msprop:Generator_ColumnPropNameInTable="temp_saldo_akhirColumn" msprop:Generator_UserColumnName="temp_saldo_akhir" type="xs:decimal" />
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="temp_jadual" msprop:Generator_TableClassName="temp_jadualDataTable" msprop:Generator_TableVarName="tabletemp_jadual" msprop:Generator_RowChangedName="temp_jadualRowChanged" msprop:Generator_TablePropName="temp_jadual" msprop:Generator_RowDeletingName="temp_jadualRowDeleting" msprop:Generator_RowChangingName="temp_jadualRowChanging" msprop:Generator_RowEvHandlerName="temp_jadualRowChangeEventHandler" msprop:Generator_RowDeletedName="temp_jadualRowDeleted" msprop:Generator_RowClassName="temp_jadualRow" msprop:Generator_UserTableName="temp_jadual" msprop:Generator_RowEvArgName="temp_jadualRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_no_rekening" msprop:Generator_ColumnVarNameInTable="columntemp_no_rekening" msprop:Generator_ColumnPropNameInRow="temp_no_rekening" msprop:Generator_ColumnPropNameInTable="temp_no_rekeningColumn" msprop:Generator_UserColumnName="temp_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_angsuran_ke" msprop:Generator_ColumnVarNameInTable="columntemp_angsuran_ke" msprop:Generator_ColumnPropNameInRow="temp_angsuran_ke" msprop:Generator_ColumnPropNameInTable="temp_angsuran_keColumn" msprop:Generator_UserColumnName="temp_angsuran_ke">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_tanggal_tagihan" msprop:Generator_ColumnVarNameInTable="columntemp_tanggal_tagihan" msprop:Generator_ColumnPropNameInRow="temp_tanggal_tagihan" msprop:Generator_ColumnPropNameInTable="temp_tanggal_tagihanColumn" msprop:Generator_UserColumnName="temp_tanggal_tagihan" type="xs:dateTime" />
+              <xs:element name="temp_pokok" msprop:Generator_ColumnVarNameInTable="columntemp_pokok" msprop:Generator_ColumnPropNameInRow="temp_pokok" msprop:Generator_ColumnPropNameInTable="temp_pokokColumn" msprop:Generator_UserColumnName="temp_pokok" type="xs:decimal" />
+              <xs:element name="temp_bunga" msprop:Generator_ColumnVarNameInTable="columntemp_bunga" msprop:Generator_ColumnPropNameInRow="temp_bunga" msprop:Generator_ColumnPropNameInTable="temp_bungaColumn" msprop:Generator_UserColumnName="temp_bunga" type="xs:decimal" />
+              <xs:element name="temp_total" msprop:Generator_ColumnVarNameInTable="columntemp_total" msprop:Generator_ColumnPropNameInRow="temp_total" msprop:Generator_ColumnPropNameInTable="temp_totalColumn" msprop:Generator_UserColumnName="temp_total" type="xs:decimal" />
+              <xs:element name="temp_saldo_pokok" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_pokok" msprop:Generator_ColumnPropNameInRow="temp_saldo_pokok" msprop:Generator_ColumnPropNameInTable="temp_saldo_pokokColumn" msprop:Generator_UserColumnName="temp_saldo_pokok" type="xs:decimal" />
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="simulasi_kredit" msprop:Generator_TableClassName="simulasi_kreditDataTable" msprop:Generator_TableVarName="tablesimulasi_kredit" msprop:Generator_TablePropName="simulasi_kredit" msprop:Generator_RowDeletingName="simulasi_kreditRowDeleting" msprop:Generator_RowChangingName="simulasi_kreditRowChanging" msprop:Generator_RowEvHandlerName="simulasi_kreditRowChangeEventHandler" msprop:Generator_RowDeletedName="simulasi_kreditRowDeleted" msprop:Generator_UserTableName="simulasi_kredit" msprop:Generator_RowChangedName="simulasi_kreditRowChanged" msprop:Generator_RowEvArgName="simulasi_kreditRowChangeEvent" msprop:Generator_RowClassName="simulasi_kreditRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_angsuran_ke" msprop:Generator_ColumnVarNameInTable="columntemp_angsuran_ke" msprop:Generator_ColumnPropNameInRow="temp_angsuran_ke" msprop:Generator_ColumnPropNameInTable="temp_angsuran_keColumn" msprop:Generator_UserColumnName="temp_angsuran_ke">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_tanggal_tagihan" msprop:Generator_ColumnVarNameInTable="columntemp_tanggal_tagihan" msprop:Generator_ColumnPropNameInRow="temp_tanggal_tagihan" msprop:Generator_ColumnPropNameInTable="temp_tanggal_tagihanColumn" msprop:Generator_UserColumnName="temp_tanggal_tagihan" type="xs:dateTime" />
+              <xs:element name="temp_pokok" msprop:Generator_ColumnVarNameInTable="columntemp_pokok" msprop:Generator_ColumnPropNameInRow="temp_pokok" msprop:Generator_ColumnPropNameInTable="temp_pokokColumn" msprop:Generator_UserColumnName="temp_pokok" type="xs:decimal" />
+              <xs:element name="temp_bunga" msprop:Generator_ColumnVarNameInTable="columntemp_bunga" msprop:Generator_ColumnPropNameInRow="temp_bunga" msprop:Generator_ColumnPropNameInTable="temp_bungaColumn" msprop:Generator_UserColumnName="temp_bunga" type="xs:decimal" />
+              <xs:element name="temp_saldo_pokok" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_pokok" msprop:Generator_ColumnPropNameInRow="temp_saldo_pokok" msprop:Generator_ColumnPropNameInTable="temp_saldo_pokokColumn" msprop:Generator_UserColumnName="temp_saldo_pokok" type="xs:decimal" />
+              <xs:element name="temp_saldo_bunga" msprop:Generator_ColumnVarNameInTable="columntemp_saldo_bunga" msprop:Generator_ColumnPropNameInRow="temp_saldo_bunga" msprop:Generator_ColumnPropNameInTable="temp_saldo_bungaColumn" msprop:Generator_UserColumnName="temp_saldo_bunga" type="xs:decimal" />
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="daftar_nasabah" msprop:Generator_TableClassName="daftar_nasabahDataTable" msprop:Generator_TableVarName="tabledaftar_nasabah" msprop:Generator_RowChangedName="daftar_nasabahRowChanged" msprop:Generator_TablePropName="daftar_nasabah" msprop:Generator_RowDeletingName="daftar_nasabahRowDeleting" msprop:Generator_RowChangingName="daftar_nasabahRowChanging" msprop:Generator_RowEvHandlerName="daftar_nasabahRowChangeEventHandler" msprop:Generator_RowDeletedName="daftar_nasabahRowDeleted" msprop:Generator_RowClassName="daftar_nasabahRow" msprop:Generator_UserTableName="daftar_nasabah" msprop:Generator_RowEvArgName="daftar_nasabahRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="temp_nasabah_id" msprop:Generator_ColumnVarNameInTable="columntemp_nasabah_id" msprop:Generator_ColumnPropNameInRow="temp_nasabah_id" msprop:Generator_ColumnPropNameInTable="temp_nasabah_idColumn" msprop:Generator_UserColumnName="temp_nasabah_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_nama_nasabah" msprop:Generator_ColumnVarNameInTable="columntemp_nama_nasabah" msprop:Generator_ColumnPropNameInRow="temp_nama_nasabah" msprop:Generator_ColumnPropNameInTable="temp_nama_nasabahColumn" msprop:Generator_UserColumnName="temp_nama_nasabah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_jenis_kelamin" msprop:Generator_ColumnVarNameInTable="columntemp_jenis_kelamin" msprop:Generator_ColumnPropNameInRow="temp_jenis_kelamin" msprop:Generator_ColumnPropNameInTable="temp_jenis_kelaminColumn" msprop:Generator_UserColumnName="temp_jenis_kelamin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_tanggal_lahir" msprop:Generator_ColumnVarNameInTable="columntemp_tanggal_lahir" msprop:Generator_ColumnPropNameInRow="temp_tanggal_lahir" msprop:Generator_ColumnPropNameInTable="temp_tanggal_lahirColumn" msprop:Generator_UserColumnName="temp_tanggal_lahir" type="xs:dateTime" />
+              <xs:element name="temp_nik" msprop:Generator_ColumnVarNameInTable="columntemp_nik" msprop:Generator_ColumnPropNameInRow="temp_nik" msprop:Generator_ColumnPropNameInTable="temp_nikColumn" msprop:Generator_UserColumnName="temp_nik">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="temp_jml_tabungan" msprop:Generator_ColumnVarNameInTable="columntemp_jml_tabungan" msprop:Generator_ColumnPropNameInRow="temp_jml_tabungan" msprop:Generator_ColumnPropNameInTable="temp_jml_tabunganColumn" msprop:Generator_UserColumnName="temp_jml_tabungan" type="xs:decimal" />
+              <xs:element name="temp_jml_kredit" msprop:Generator_ColumnVarNameInTable="columntemp_jml_kredit" msprop:Generator_ColumnPropNameInRow="temp_jml_kredit" msprop:Generator_ColumnPropNameInTable="temp_jml_kreditColumn" msprop:Generator_UserColumnName="temp_jml_kredit" type="xs:decimal" />
+              <xs:element name="temp_username" msprop:Generator_ColumnVarNameInTable="columntemp_username" msprop:Generator_ColumnPropNameInRow="temp_username" msprop:Generator_ColumnPropNameInTable="temp_usernameColumn" msprop:Generator_UserColumnName="temp_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rincian_transaksi_kredit2" msprop:Generator_TableClassName="rincian_transaksi_kredit2DataTable" msprop:Generator_TableVarName="tablerincian_transaksi_kredit2" msprop:Generator_RowChangedName="rincian_transaksi_kredit2RowChanged" msprop:Generator_TablePropName="rincian_transaksi_kredit2" msprop:Generator_RowDeletingName="rincian_transaksi_kredit2RowDeleting" msprop:Generator_RowChangingName="rincian_transaksi_kredit2RowChanging" msprop:Generator_RowEvHandlerName="rincian_transaksi_kredit2RowChangeEventHandler" msprop:Generator_RowDeletedName="rincian_transaksi_kredit2RowDeleted" msprop:Generator_RowClassName="rincian_transaksi_kredit2Row" msprop:Generator_UserTableName="rincian_transaksi_kredit2" msprop:Generator_RowEvArgName="rincian_transaksi_kredit2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="angs_no_rekening" msprop:Generator_ColumnVarNameInTable="columnangs_no_rekening" msprop:Generator_ColumnPropNameInRow="angs_no_rekening" msprop:Generator_ColumnPropNameInTable="angs_no_rekeningColumn" msprop:Generator_UserColumnName="angs_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nasabah_nama1" msprop:Generator_ColumnVarNameInTable="columnnasabah_nama1" msprop:Generator_ColumnPropNameInRow="nasabah_nama1" msprop:Generator_ColumnPropNameInTable="nasabah_nama1Column" msprop:Generator_UserColumnName="nasabah_nama1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nasabah_alamat" msprop:Generator_ColumnVarNameInTable="columnnasabah_alamat" msprop:Generator_ColumnPropNameInRow="nasabah_alamat" msprop:Generator_ColumnPropNameInTable="nasabah_alamatColumn" msprop:Generator_UserColumnName="nasabah_alamat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tgl_pencairan" msprop:Generator_ColumnVarNameInTable="columntgl_pencairan" msprop:Generator_ColumnPropNameInRow="tgl_pencairan" msprop:Generator_ColumnPropNameInTable="tgl_pencairanColumn" msprop:Generator_UserColumnName="tgl_pencairan" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="angs_tanggal" msprop:Generator_ColumnVarNameInTable="columnangs_tanggal" msprop:Generator_ColumnPropNameInRow="angs_tanggal" msprop:Generator_ColumnPropNameInTable="angs_tanggalColumn" msprop:Generator_UserColumnName="angs_tanggal" type="xs:dateTime" />
+              <xs:element name="angs_kode_transaksi" msprop:Generator_ColumnVarNameInTable="columnangs_kode_transaksi" msprop:Generator_ColumnPropNameInRow="angs_kode_transaksi" msprop:Generator_ColumnPropNameInTable="angs_kode_transaksiColumn" msprop:Generator_UserColumnName="angs_kode_transaksi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="angs_pokok" msprop:Generator_ColumnVarNameInTable="columnangs_pokok" msprop:Generator_ColumnPropNameInRow="angs_pokok" msprop:Generator_ColumnPropNameInTable="angs_pokokColumn" msprop:Generator_UserColumnName="angs_pokok" type="xs:decimal" />
+              <xs:element name="angs_bunga" msprop:Generator_ColumnVarNameInTable="columnangs_bunga" msprop:Generator_ColumnPropNameInRow="angs_bunga" msprop:Generator_ColumnPropNameInTable="angs_bungaColumn" msprop:Generator_UserColumnName="angs_bunga" type="xs:decimal" />
+              <xs:element name="angs_denda" msprop:Generator_ColumnVarNameInTable="columnangs_denda" msprop:Generator_ColumnPropNameInRow="angs_denda" msprop:Generator_ColumnPropNameInTable="angs_dendaColumn" msprop:Generator_UserColumnName="angs_denda" type="xs:decimal" />
+              <xs:element name="angs_total_setoran" msprop:Generator_ColumnVarNameInTable="columnangs_total_setoran" msprop:Generator_ColumnPropNameInRow="angs_total_setoran" msprop:Generator_ColumnPropNameInTable="angs_total_setoranColumn" msprop:Generator_UserColumnName="angs_total_setoran" type="xs:decimal" />
+              <xs:element name="bakidebet" msprop:Generator_ColumnVarNameInTable="columnbakidebet" msprop:Generator_ColumnPropNameInRow="bakidebet" msprop:Generator_ColumnPropNameInTable="bakidebetColumn" msprop:Generator_UserColumnName="bakidebet" type="xs:decimal" minOccurs="0" />
+              <xs:element name="jenis" msprop:Generator_ColumnVarNameInTable="columnjenis" msprop:Generator_ColumnPropNameInRow="jenis" msprop:Generator_ColumnPropNameInTable="jenisColumn" msprop:Generator_UserColumnName="jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolek" msprop:Generator_ColumnVarNameInTable="columnkolek" msprop:Generator_ColumnPropNameInRow="kolek" msprop:Generator_ColumnPropNameInTable="kolekColumn" msprop:Generator_UserColumnName="kolek">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="nominatif_bunga_tabungan" msprop:Generator_TableClassName="nominatif_bunga_tabunganDataTable" msprop:Generator_TableVarName="tablenominatif_bunga_tabungan" msprop:Generator_TablePropName="nominatif_bunga_tabungan" msprop:Generator_RowDeletingName="nominatif_bunga_tabunganRowDeleting" msprop:Generator_RowChangingName="nominatif_bunga_tabunganRowChanging" msprop:Generator_RowEvHandlerName="nominatif_bunga_tabunganRowChangeEventHandler" msprop:Generator_RowDeletedName="nominatif_bunga_tabunganRowDeleted" msprop:Generator_UserTableName="nominatif_bunga_tabungan" msprop:Generator_RowChangedName="nominatif_bunga_tabunganRowChanged" msprop:Generator_RowEvArgName="nominatif_bunga_tabunganRowChangeEvent" msprop:Generator_RowClassName="nominatif_bunga_tabunganRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="detail_tanggal" msprop:Generator_ColumnVarNameInTable="columndetail_tanggal" msprop:Generator_ColumnPropNameInRow="detail_tanggal" msprop:Generator_ColumnPropNameInTable="detail_tanggalColumn" msprop:Generator_UserColumnName="detail_tanggal" type="xs:dateTime" />
+              <xs:element name="detail_no_rekening" msprop:Generator_ColumnVarNameInTable="columndetail_no_rekening" msprop:Generator_ColumnPropNameInRow="detail_no_rekening" msprop:Generator_ColumnPropNameInTable="detail_no_rekeningColumn" msprop:Generator_UserColumnName="detail_no_rekening">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_no_alternatif" msprop:Generator_ColumnVarNameInTable="columnrek_tab_no_alternatif" msprop:Generator_ColumnPropNameInRow="rek_tab_no_alternatif" msprop:Generator_ColumnPropNameInTable="rek_tab_no_alternatifColumn" msprop:Generator_UserColumnName="rek_tab_no_alternatif">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="detail_nama_nasabah" msprop:Generator_ColumnVarNameInTable="columndetail_nama_nasabah" msprop:Generator_ColumnPropNameInRow="detail_nama_nasabah" msprop:Generator_ColumnPropNameInTable="detail_nama_nasabahColumn" msprop:Generator_UserColumnName="detail_nama_nasabah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_kode_pemilik" msprop:Generator_ColumnVarNameInTable="columnrek_tab_kode_pemilik" msprop:Generator_ColumnPropNameInRow="rek_tab_kode_pemilik" msprop:Generator_ColumnPropNameInTable="rek_tab_kode_pemilikColumn" msprop:Generator_UserColumnName="rek_tab_kode_pemilik">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_kode_kolektor" msprop:Generator_ColumnVarNameInTable="columnrek_tab_kode_kolektor" msprop:Generator_ColumnPropNameInRow="rek_tab_kode_kolektor" msprop:Generator_ColumnPropNameInTable="rek_tab_kode_kolektorColumn" msprop:Generator_UserColumnName="rek_tab_kode_kolektor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_kode_wilayah" msprop:Generator_ColumnVarNameInTable="columnrek_tab_kode_wilayah" msprop:Generator_ColumnPropNameInRow="rek_tab_kode_wilayah" msprop:Generator_ColumnPropNameInTable="rek_tab_kode_wilayahColumn" msprop:Generator_UserColumnName="rek_tab_kode_wilayah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rek_tab_kode_instansi" msprop:Generator_ColumnVarNameInTable="columnrek_tab_kode_instansi" msprop:Generator_ColumnPropNameInRow="rek_tab_kode_instansi" msprop:Generator_ColumnPropNameInTable="rek_tab_kode_instansiColumn" msprop:Generator_UserColumnName="rek_tab_kode_instansi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nasabah_keterkaitan" msprop:Generator_ColumnVarNameInTable="columnnasabah_keterkaitan" msprop:Generator_ColumnPropNameInRow="nasabah_keterkaitan" msprop:Generator_ColumnPropNameInTable="nasabah_keterkaitanColumn" msprop:Generator_UserColumnName="nasabah_keterkaitan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nasabah_jenis_kelamin" msprop:Generator_ColumnVarNameInTable="columnnasabah_jenis_kelamin" msprop:Generator_ColumnPropNameInRow="nasabah_jenis_kelamin" msprop:Generator_ColumnPropNameInTable="nasabah_jenis_kelaminColumn" msprop:Generator_UserColumnName="nasabah_jenis_kelamin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="detail_metode_bunga" msprop:Generator_ColumnVarNameInTable="columndetail_metode_bunga" msprop:Generator_ColumnPropNameInRow="detail_metode_bunga" msprop:Generator_ColumnPropNameInTable="detail_metode_bungaColumn" msprop:Generator_UserColumnName="detail_metode_bunga">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="detail_bunga" msprop:Generator_ColumnVarNameInTable="columndetail_bunga" msprop:Generator_ColumnPropNameInRow="detail_bunga" msprop:Generator_ColumnPropNameInTable="detail_bungaColumn" msprop:Generator_UserColumnName="detail_bunga" type="xs:decimal" />
+              <xs:element name="detail_saldo_awal" msprop:Generator_ColumnVarNameInTable="columndetail_saldo_awal" msprop:Generator_ColumnPropNameInRow="detail_saldo_awal" msprop:Generator_ColumnPropNameInTable="detail_saldo_awalColumn" msprop:Generator_UserColumnName="detail_saldo_awal" type="xs:decimal" />
+              <xs:element name="detail_nilai_bunga" msprop:Generator_ColumnVarNameInTable="columndetail_nilai_bunga" msprop:Generator_ColumnPropNameInRow="detail_nilai_bunga" msprop:Generator_ColumnPropNameInTable="detail_nilai_bungaColumn" msprop:Generator_UserColumnName="detail_nilai_bunga" type="xs:decimal" />
+              <xs:element name="detail_adm_rekening" msprop:Generator_ColumnVarNameInTable="columndetail_adm_rekening" msprop:Generator_ColumnPropNameInRow="detail_adm_rekening" msprop:Generator_ColumnPropNameInTable="detail_adm_rekeningColumn" msprop:Generator_UserColumnName="detail_adm_rekening" type="xs:decimal" />
+              <xs:element name="detail_adm_tab_pasif" msprop:Generator_ColumnVarNameInTable="columndetail_adm_tab_pasif" msprop:Generator_ColumnPropNameInRow="detail_adm_tab_pasif" msprop:Generator_ColumnPropNameInTable="detail_adm_tab_pasifColumn" msprop:Generator_UserColumnName="detail_adm_tab_pasif" type="xs:decimal" />
+              <xs:element name="detail_saldo_akhir" msprop:Generator_ColumnVarNameInTable="columndetail_saldo_akhir" msprop:Generator_ColumnPropNameInRow="detail_saldo_akhir" msprop:Generator_ColumnPropNameInTable="detail_saldo_akhirColumn" msprop:Generator_UserColumnName="detail_saldo_akhir" type="xs:decimal" />
+              <xs:element name="rek_tab_kode_produk" msprop:Generator_ColumnVarNameInTable="columnrek_tab_kode_produk" msprop:Generator_ColumnPropNameInRow="rek_tab_kode_produk" msprop:Generator_ColumnPropNameInTable="rek_tab_kode_produkColumn" msprop:Generator_UserColumnName="rek_tab_kode_produk">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="detail_pajak_tabungan" msprop:Generator_ColumnVarNameInTable="columndetail_pajak_tabungan" msprop:Generator_ColumnPropNameInRow="detail_pajak_tabungan" msprop:Generator_ColumnPropNameInTable="detail_pajak_tabunganColumn" msprop:Generator_UserColumnName="detail_pajak_tabungan" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="jurnal_kas" msprop:Generator_TableClassName="jurnal_kasDataTable" msprop:Generator_TableVarName="tablejurnal_kas" msprop:Generator_RowChangedName="jurnal_kasRowChanged" msprop:Generator_TablePropName="jurnal_kas" msprop:Generator_RowDeletingName="jurnal_kasRowDeleting" msprop:Generator_RowChangingName="jurnal_kasRowChanging" msprop:Generator_RowEvHandlerName="jurnal_kasRowChangeEventHandler" msprop:Generator_RowDeletedName="jurnal_kasRowDeleted" msprop:Generator_RowClassName="jurnal_kasRow" msprop:Generator_UserTableName="jurnal_kas" msprop:Generator_RowEvArgName="jurnal_kasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jurnal_tanggal" msprop:Generator_ColumnVarNameInTable="columnjurnal_tanggal" msprop:Generator_ColumnPropNameInRow="jurnal_tanggal" msprop:Generator_ColumnPropNameInTable="jurnal_tanggalColumn" msprop:Generator_UserColumnName="jurnal_tanggal" type="xs:dateTime" />
+              <xs:element name="jurnal_waktu" msprop:Generator_ColumnVarNameInTable="columnjurnal_waktu" msprop:Generator_ColumnPropNameInRow="jurnal_waktu" msprop:Generator_ColumnPropNameInTable="jurnal_waktuColumn" msprop:Generator_UserColumnName="jurnal_waktu" type="xs:dateTime" />
+              <xs:element name="jurnal_trans" msprop:Generator_ColumnVarNameInTable="columnjurnal_trans" msprop:Generator_ColumnPropNameInRow="jurnal_trans" msprop:Generator_ColumnPropNameInTable="jurnal_transColumn" msprop:Generator_UserColumnName="jurnal_trans">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jurnal_jenis" msprop:Generator_ColumnVarNameInTable="columnjurnal_jenis" msprop:Generator_ColumnPropNameInRow="jurnal_jenis" msprop:Generator_ColumnPropNameInTable="jurnal_jenisColumn" msprop:Generator_UserColumnName="jurnal_jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jenis" msprop:Generator_ColumnVarNameInTable="columnjenis" msprop:Generator_ColumnPropNameInRow="jenis" msprop:Generator_ColumnPropNameInTable="jenisColumn" msprop:Generator_UserColumnName="jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jurnal_perkiraan" msprop:Generator_ColumnVarNameInTable="columnjurnal_perkiraan" msprop:Generator_ColumnPropNameInRow="jurnal_perkiraan" msprop:Generator_ColumnPropNameInTable="jurnal_perkiraanColumn" msprop:Generator_UserColumnName="jurnal_perkiraan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jurnal_uraian" msprop:Generator_ColumnVarNameInTable="columnjurnal_uraian" msprop:Generator_ColumnPropNameInRow="jurnal_uraian" msprop:Generator_ColumnPropNameInTable="jurnal_uraianColumn" msprop:Generator_UserColumnName="jurnal_uraian">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="masuk" msprop:Generator_ColumnVarNameInTable="columnmasuk" msprop:Generator_ColumnPropNameInRow="masuk" msprop:Generator_ColumnPropNameInTable="masukColumn" msprop:Generator_UserColumnName="masuk" type="xs:decimal" />
+              <xs:element name="keluar" msprop:Generator_ColumnVarNameInTable="columnkeluar" msprop:Generator_ColumnPropNameInRow="keluar" msprop:Generator_ColumnPropNameInTable="keluarColumn" msprop:Generator_UserColumnName="keluar" type="xs:decimal" />
+              <xs:element name="jurnal_username" msprop:Generator_ColumnVarNameInTable="columnjurnal_username" msprop:Generator_ColumnPropNameInRow="jurnal_username" msprop:Generator_ColumnPropNameInTable="jurnal_usernameColumn" msprop:Generator_UserColumnName="jurnal_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="jurnal_nonkas" msprop:Generator_TableClassName="jurnal_nonkasDataTable" msprop:Generator_TableVarName="tablejurnal_nonkas" msprop:Generator_RowChangedName="jurnal_nonkasRowChanged" msprop:Generator_TablePropName="jurnal_nonkas" msprop:Generator_RowDeletingName="jurnal_nonkasRowDeleting" msprop:Generator_RowChangingName="jurnal_nonkasRowChanging" msprop:Generator_RowEvHandlerName="jurnal_nonkasRowChangeEventHandler" msprop:Generator_RowDeletedName="jurnal_nonkasRowDeleted" msprop:Generator_RowClassName="jurnal_nonkasRow" msprop:Generator_UserTableName="jurnal_nonkas" msprop:Generator_RowEvArgName="jurnal_nonkasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jurnal_tanggal" msprop:Generator_ColumnVarNameInTable="columnjurnal_tanggal" msprop:Generator_ColumnPropNameInRow="jurnal_tanggal" msprop:Generator_ColumnPropNameInTable="jurnal_tanggalColumn" msprop:Generator_UserColumnName="jurnal_tanggal" type="xs:dateTime" />
+              <xs:element name="jurnal_waktu" msprop:Generator_ColumnVarNameInTable="columnjurnal_waktu" msprop:Generator_ColumnPropNameInRow="jurnal_waktu" msprop:Generator_ColumnPropNameInTable="jurnal_waktuColumn" msprop:Generator_UserColumnName="jurnal_waktu" type="xs:dateTime" />
+              <xs:element name="jurnal_trans" msprop:Generator_ColumnVarNameInTable="columnjurnal_trans" msprop:Generator_ColumnPropNameInRow="jurnal_trans" msprop:Generator_ColumnPropNameInTable="jurnal_transColumn" msprop:Generator_UserColumnName="jurnal_trans">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jurnal_jenis" msprop:Generator_ColumnVarNameInTable="columnjurnal_jenis" msprop:Generator_ColumnPropNameInRow="jurnal_jenis" msprop:Generator_ColumnPropNameInTable="jurnal_jenisColumn" msprop:Generator_UserColumnName="jurnal_jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jenis" msprop:Generator_ColumnVarNameInTable="columnjenis" msprop:Generator_ColumnPropNameInRow="jenis" msprop:Generator_ColumnPropNameInTable="jenisColumn" msprop:Generator_UserColumnName="jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jurnal_perkiraan" msprop:Generator_ColumnVarNameInTable="columnjurnal_perkiraan" msprop:Generator_ColumnPropNameInRow="jurnal_perkiraan" msprop:Generator_ColumnPropNameInTable="jurnal_perkiraanColumn" msprop:Generator_UserColumnName="jurnal_perkiraan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jurnal_uraian" msprop:Generator_ColumnVarNameInTable="columnjurnal_uraian" msprop:Generator_ColumnPropNameInRow="jurnal_uraian" msprop:Generator_ColumnPropNameInTable="jurnal_uraianColumn" msprop:Generator_UserColumnName="jurnal_uraian">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jurnal_debet" msprop:Generator_ColumnVarNameInTable="columnjurnal_debet" msprop:Generator_ColumnPropNameInRow="jurnal_debet" msprop:Generator_ColumnPropNameInTable="jurnal_debetColumn" msprop:Generator_UserColumnName="jurnal_debet" type="xs:decimal" />
+              <xs:element name="jurnal_kredit" msprop:Generator_ColumnVarNameInTable="columnjurnal_kredit" msprop:Generator_ColumnPropNameInRow="jurnal_kredit" msprop:Generator_ColumnPropNameInTable="jurnal_kreditColumn" msprop:Generator_UserColumnName="jurnal_kredit" type="xs:decimal" />
+              <xs:element name="jurnal_username" msprop:Generator_ColumnVarNameInTable="columnjurnal_username" msprop:Generator_ColumnPropNameInRow="jurnal_username" msprop:Generator_ColumnPropNameInTable="jurnal_usernameColumn" msprop:Generator_UserColumnName="jurnal_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="gambar_nasabah" msprop:Generator_TableClassName="gambar_nasabahDataTable" msprop:Generator_TableVarName="tablegambar_nasabah" msprop:Generator_RowChangedName="gambar_nasabahRowChanged" msprop:Generator_TablePropName="gambar_nasabah" msprop:Generator_RowDeletingName="gambar_nasabahRowDeleting" msprop:Generator_RowChangingName="gambar_nasabahRowChanging" msprop:Generator_RowEvHandlerName="gambar_nasabahRowChangeEventHandler" msprop:Generator_RowDeletedName="gambar_nasabahRowDeleted" msprop:Generator_RowClassName="gambar_nasabahRow" msprop:Generator_UserTableName="gambar_nasabah" msprop:Generator_RowEvArgName="gambar_nasabahRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="gambar_nasabah_id" msprop:Generator_ColumnVarNameInTable="columngambar_nasabah_id" msprop:Generator_ColumnPropNameInRow="gambar_nasabah_id" msprop:Generator_ColumnPropNameInTable="gambar_nasabah_idColumn" msprop:Generator_UserColumnName="gambar_nasabah_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gambar_file" msprop:Generator_ColumnVarNameInTable="columngambar_file" msprop:Generator_ColumnPropNameInRow="gambar_file" msprop:Generator_ColumnPropNameInTable="gambar_fileColumn" msprop:Generator_UserColumnName="gambar_file" type="xs:base64Binary" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="verbal_kas" msprop:Generator_TableClassName="verbal_kasDataTable" msprop:Generator_TableVarName="tableverbal_kas" msprop:Generator_TablePropName="verbal_kas" msprop:Generator_RowDeletingName="verbal_kasRowDeleting" msprop:Generator_RowChangingName="verbal_kasRowChanging" msprop:Generator_RowEvHandlerName="verbal_kasRowChangeEventHandler" msprop:Generator_RowDeletedName="verbal_kasRowDeleted" msprop:Generator_UserTableName="verbal_kas" msprop:Generator_RowChangedName="verbal_kasRowChanged" msprop:Generator_RowEvArgName="verbal_kasRowChangeEvent" msprop:Generator_RowClassName="verbal_kasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="verbal_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnverbal_id" msprop:Generator_ColumnPropNameInRow="verbal_id" msprop:Generator_ColumnPropNameInTable="verbal_idColumn" msprop:Generator_UserColumnName="verbal_id" type="xs:int" />
+              <xs:element name="verbal_tanggal" msprop:Generator_ColumnVarNameInTable="columnverbal_tanggal" msprop:Generator_ColumnPropNameInRow="verbal_tanggal" msprop:Generator_ColumnPropNameInTable="verbal_tanggalColumn" msprop:Generator_UserColumnName="verbal_tanggal" type="xs:dateTime" />
+              <xs:element name="verbal_jenis" msprop:Generator_ColumnVarNameInTable="columnverbal_jenis" msprop:Generator_ColumnPropNameInRow="verbal_jenis" msprop:Generator_ColumnPropNameInTable="verbal_jenisColumn" msprop:Generator_UserColumnName="verbal_jenis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="verbal_pecahan" msprop:Generator_ColumnVarNameInTable="columnverbal_pecahan" msprop:Generator_ColumnPropNameInRow="verbal_pecahan" msprop:Generator_ColumnPropNameInTable="verbal_pecahanColumn" msprop:Generator_UserColumnName="verbal_pecahan" type="xs:decimal" />
+              <xs:element name="verbal_fisik" msprop:Generator_ColumnVarNameInTable="columnverbal_fisik" msprop:Generator_ColumnPropNameInRow="verbal_fisik" msprop:Generator_ColumnPropNameInTable="verbal_fisikColumn" msprop:Generator_UserColumnName="verbal_fisik" type="xs:decimal" />
+              <xs:element name="verbal_nominal" msprop:Generator_ColumnVarNameInTable="columnverbal_nominal" msprop:Generator_ColumnPropNameInRow="verbal_nominal" msprop:Generator_ColumnPropNameInTable="verbal_nominalColumn" msprop:Generator_UserColumnName="verbal_nominal" type="xs:decimal" />
+              <xs:element name="verbal_reg_username" msprop:Generator_ColumnVarNameInTable="columnverbal_reg_username" msprop:Generator_ColumnPropNameInRow="verbal_reg_username" msprop:Generator_ColumnPropNameInTable="verbal_reg_usernameColumn" msprop:Generator_UserColumnName="verbal_reg_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="verbal_reg_waktu" msprop:Generator_ColumnVarNameInTable="columnverbal_reg_waktu" msprop:Generator_ColumnPropNameInRow="verbal_reg_waktu" msprop:Generator_ColumnPropNameInTable="verbal_reg_waktuColumn" msprop:Generator_UserColumnName="verbal_reg_waktu" type="xs:dateTime" />
+              <xs:element name="verbal_update_username" msprop:Generator_ColumnVarNameInTable="columnverbal_update_username" msprop:Generator_ColumnPropNameInRow="verbal_update_username" msprop:Generator_ColumnPropNameInTable="verbal_update_usernameColumn" msprop:Generator_UserColumnName="verbal_update_username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="verbal_update_waktu" msprop:Generator_ColumnVarNameInTable="columnverbal_update_waktu" msprop:Generator_ColumnPropNameInRow="verbal_update_waktu" msprop:Generator_ColumnPropNameInTable="verbal_update_waktuColumn" msprop:Generator_UserColumnName="verbal_update_waktu" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:profil_nasabah_tabungan" />
+      <xs:field xpath="mstns:rek_tab_no_rekening" />
+    </xs:unique>
+    <xs:unique name="profil_nasabah_kredit_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:profil_nasabah_kredit" />
+      <xs:field xpath="mstns:rek_kre_no_rekening" />
+    </xs:unique>
+    <xs:unique name="gambar_nasabah_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:gambar_nasabah" />
+      <xs:field xpath="mstns:gambar_nasabah_id" />
+    </xs:unique>
+    <xs:unique name="verbal_kas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:verbal_kas" />
+      <xs:field xpath="mstns:verbal_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
