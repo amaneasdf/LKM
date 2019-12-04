@@ -127,6 +127,36 @@ Module mdl_sysvar
     'USER DATA
     Public LoggedUser As New UserData
 
+    'DATA LIST PROPERTY
+    Public ReadOnly Property LimitDataPerPage As Integer
+        Get
+            Try
+                _LimitPerPage = getSetting("App").Keys("LimitPerPage").Value
+                Return _LimitPerPage
+            Catch ex As Exception
+                LogError(ex)
+                Return 1000
+            End Try
+        End Get
+    End Property
+
+    'SCREEN LOCK LIMIT(IN MINUTES)
+    Public ReadOnly Property ScreenLockTimer As Integer
+        Get
+            Try
+                _ScreenLock = getSetting("App").Keys("ScreenLock").Value
+                Return 60000 * _ScreenLock
+            Catch ex As Exception
+                LogError(ex)
+                Return 60000 * 10
+            End Try
+        End Get
+    End Property
+
+    'FONT
+    Public OpenSans_Self As Boolean = False
+    Public SourceSans_Self As Boolean = False
+
 
     'DATAGRID COLUMNS LIST
     Public dgvcol_temp_ck = New DataGridViewCheckBoxColumn With {

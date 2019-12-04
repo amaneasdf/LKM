@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class fr_deposito_product
+Partial Class fr_list_product
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
@@ -31,40 +31,38 @@ Partial Class fr_deposito_product
         Me.btntambah = New System.Windows.Forms.Button()
         Me.btnkeluar = New System.Windows.Forms.Button()
         Me.dgv_list = New System.Windows.Forms.DataGridView()
-        Me.Panel1.SuspendLayout()
         Me.pnl_top.SuspendLayout()
         CType(Me.dgv_list, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.BackColor = System.Drawing.Color.Azure
         Me.Panel1.BackgroundImage = Global.LKM.My.Resources.Resources.header4
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.lbl_judul)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(909, 49)
+        Me.Panel1.Size = New System.Drawing.Size(909, 35)
         Me.Panel1.TabIndex = 4
         '
         'lbl_judul
         '
         Me.lbl_judul.AutoSize = True
         Me.lbl_judul.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_judul.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_judul.ForeColor = System.Drawing.Color.White
-        Me.lbl_judul.Location = New System.Drawing.Point(4, 0)
+        Me.lbl_judul.Font = New System.Drawing.Font("Open Sans", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_judul.ForeColor = System.Drawing.Color.Black
+        Me.lbl_judul.Location = New System.Drawing.Point(4, 10)
         Me.lbl_judul.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_judul.Name = "lbl_judul"
-        Me.lbl_judul.Size = New System.Drawing.Size(243, 25)
+        Me.lbl_judul.Size = New System.Drawing.Size(241, 26)
         Me.lbl_judul.TabIndex = 1
         Me.lbl_judul.Text = "Master Produk Deposito"
         '
         'pnl_bottom
         '
-        Me.pnl_bottom.BackColor = System.Drawing.Color.White
+        Me.pnl_bottom.BackColor = System.Drawing.Color.LightCyan
         Me.pnl_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.pnl_bottom.Location = New System.Drawing.Point(0, 497)
         Me.pnl_bottom.Name = "pnl_bottom"
@@ -73,13 +71,15 @@ Partial Class fr_deposito_product
         '
         'pnl_top
         '
-        Me.pnl_top.BackColor = System.Drawing.Color.White
+        Me.pnl_top.BackColor = System.Drawing.Color.Azure
+        Me.pnl_top.Controls.Add(Me.lbl_judul)
         Me.pnl_top.Controls.Add(Me.btnhapus)
         Me.pnl_top.Controls.Add(Me.btnkoreksi)
         Me.pnl_top.Controls.Add(Me.btntambah)
         Me.pnl_top.Controls.Add(Me.btnkeluar)
         Me.pnl_top.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnl_top.Location = New System.Drawing.Point(0, 49)
+        Me.pnl_top.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnl_top.Location = New System.Drawing.Point(0, 35)
         Me.pnl_top.Name = "pnl_top"
         Me.pnl_top.Size = New System.Drawing.Size(909, 50)
         Me.pnl_top.TabIndex = 6
@@ -91,15 +91,16 @@ Partial Class fr_deposito_product
         Me.btnhapus.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnhapus.Enabled = False
         Me.btnhapus.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnhapus.FlatAppearance.BorderSize = 2
+        Me.btnhapus.FlatAppearance.BorderSize = 0
         Me.btnhapus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan
         Me.btnhapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnhapus.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnhapus.Image = Global.LKM.My.Resources.Resources.Delete
         Me.btnhapus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnhapus.Location = New System.Drawing.Point(509, 0)
+        Me.btnhapus.Location = New System.Drawing.Point(504, 2)
         Me.btnhapus.Margin = New System.Windows.Forms.Padding(4)
         Me.btnhapus.Name = "btnhapus"
-        Me.btnhapus.Size = New System.Drawing.Size(100, 50)
+        Me.btnhapus.Size = New System.Drawing.Size(100, 45)
         Me.btnhapus.TabIndex = 12
         Me.btnhapus.Text = "Hapus"
         Me.btnhapus.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -112,15 +113,16 @@ Partial Class fr_deposito_product
         Me.btnkoreksi.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnkoreksi.Enabled = False
         Me.btnkoreksi.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnkoreksi.FlatAppearance.BorderSize = 2
+        Me.btnkoreksi.FlatAppearance.BorderSize = 0
         Me.btnkoreksi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan
         Me.btnkoreksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnkoreksi.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnkoreksi.Image = Global.LKM.My.Resources.Resources.Edit
         Me.btnkoreksi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnkoreksi.Location = New System.Drawing.Point(609, 0)
+        Me.btnkoreksi.Location = New System.Drawing.Point(605, 2)
         Me.btnkoreksi.Margin = New System.Windows.Forms.Padding(4)
         Me.btnkoreksi.Name = "btnkoreksi"
-        Me.btnkoreksi.Size = New System.Drawing.Size(100, 50)
+        Me.btnkoreksi.Size = New System.Drawing.Size(100, 45)
         Me.btnkoreksi.TabIndex = 13
         Me.btnkoreksi.Text = "Koreksi"
         Me.btnkoreksi.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -132,15 +134,16 @@ Partial Class fr_deposito_product
         Me.btntambah.BackColor = System.Drawing.Color.LightBlue
         Me.btntambah.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btntambah.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btntambah.FlatAppearance.BorderSize = 2
+        Me.btntambah.FlatAppearance.BorderSize = 0
         Me.btntambah.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan
         Me.btntambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntambah.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btntambah.Image = Global.LKM.My.Resources.Resources.Add
         Me.btntambah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btntambah.Location = New System.Drawing.Point(709, 0)
+        Me.btntambah.Location = New System.Drawing.Point(706, 2)
         Me.btntambah.Margin = New System.Windows.Forms.Padding(4)
         Me.btntambah.Name = "btntambah"
-        Me.btntambah.Size = New System.Drawing.Size(100, 50)
+        Me.btntambah.Size = New System.Drawing.Size(100, 45)
         Me.btntambah.TabIndex = 14
         Me.btntambah.Text = "Tambah"
         Me.btntambah.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -152,15 +155,16 @@ Partial Class fr_deposito_product
         Me.btnkeluar.BackColor = System.Drawing.Color.LightBlue
         Me.btnkeluar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnkeluar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnkeluar.FlatAppearance.BorderSize = 2
+        Me.btnkeluar.FlatAppearance.BorderSize = 0
         Me.btnkeluar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan
         Me.btnkeluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnkeluar.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnkeluar.Image = Global.LKM.My.Resources.Resources.Close
         Me.btnkeluar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnkeluar.Location = New System.Drawing.Point(809, 0)
+        Me.btnkeluar.Location = New System.Drawing.Point(807, 2)
         Me.btnkeluar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnkeluar.Name = "btnkeluar"
-        Me.btnkeluar.Size = New System.Drawing.Size(100, 50)
+        Me.btnkeluar.Size = New System.Drawing.Size(100, 45)
         Me.btnkeluar.TabIndex = 15
         Me.btnkeluar.Text = "Keluar"
         Me.btnkeluar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -173,10 +177,10 @@ Partial Class fr_deposito_product
         Me.dgv_list.BackgroundColor = System.Drawing.Color.White
         Me.dgv_list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_list.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_list.Location = New System.Drawing.Point(0, 99)
+        Me.dgv_list.Location = New System.Drawing.Point(0, 85)
         Me.dgv_list.Name = "dgv_list"
         Me.dgv_list.ReadOnly = True
-        Me.dgv_list.Size = New System.Drawing.Size(909, 398)
+        Me.dgv_list.Size = New System.Drawing.Size(909, 412)
         Me.dgv_list.TabIndex = 7
         '
         'fr_deposito_product
@@ -189,9 +193,8 @@ Partial Class fr_deposito_product
         Me.Controls.Add(Me.Panel1)
         Me.Name = "fr_deposito_product"
         Me.Size = New System.Drawing.Size(909, 547)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.pnl_top.ResumeLayout(False)
+        Me.pnl_top.PerformLayout()
         CType(Me.dgv_list, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

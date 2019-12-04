@@ -2,7 +2,7 @@
 
     Private Sub fr_deposito_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.ResizeRedraw = True
-        Dim x As New fr_deposito_product With {.Dock = DockStyle.Fill}
+        Dim x As New fr_list_product With {.Dock = DockStyle.Fill}
         x.LoadControl(pnl_content, "deposito", "Master Produk Simpanan Berjangka")
     End Sub
 

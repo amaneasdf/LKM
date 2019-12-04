@@ -1,5 +1,6 @@
 ﻿Namespace My
-    ' The following events are available for MyApplication:
+
+    ' The following events are available for MyApplication:
     ' 
     ' Startup: Raised when the application starts, before the startup form is created.
     ' Shutdown: Raised after all application forms are closed.  This event is not raised if the application terminates abnormally.
@@ -18,6 +19,28 @@
             'MyApplication.UnhandledException event.
             AddHandler AppDomain.CurrentDomain.UnhandledException, AddressOf AppDomain_UnhandledException
             AddHandler System.Windows.Forms.Application.ThreadException, AddressOf app_ThreadException
+
+            'CHECK FONT
+            For Each _font As String In {"Open Sans", "Source Sans Pro"}
+                If Not IsFontInstalled(_font) Then
+                    Dim _idx As Integer = 0
+                    Select Case _font
+                        Case "Open Sans"
+                            _idx = 1 : OpenSans_Self = True
+                        Case "Source Sans Pro"
+                            _idx = 2 : SourceSans_Self = True
+                        Case Else : GoTo NextFont
+                    End Select
+
+                    'TODO : CHECK FILE AVALIABILITY
+
+                    'REGISTER FONT FILES
+                    For Each _file As String In IO.Directory.GetFiles(AppDir_SystemFile & "font\" & _idx & "\")
+                        If _file.Split(".").Last = "ttf" Then AddFontResource(_file)
+                    Next
+                End If
+NextFont:
+            Next
         End Sub
 
         'ERROR HANDLING
