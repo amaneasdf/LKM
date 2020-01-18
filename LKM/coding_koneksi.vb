@@ -9,7 +9,7 @@ Module coding_koneksi
     Public ds As DataSet
     Public cd As MySqlCommand
     Public rd As MySqlDataReader
-    Public server, uid, password, database As String
+    Private server, uid, password, database As String
 
     Sub koneksi_localhost()
         'baca_config()
@@ -19,6 +19,7 @@ Module coding_koneksi
             database = MainConnData.db
             uid = decryptString(MainConnData.uid)
             password = decryptString(MainConnData.pwd)
+            MainConnection = New MySqlThing(server, database, uid, password)
 
             koneksi = New MySqlConnection("server=" & server & ";uid=" & uid & ";password=" & password & ";database=" & database & "")
             koneksi.Open()

@@ -29,13 +29,10 @@ Public Class MDIParent1
             '     .Focus()
             'End With
             Case "Setup Menu"
-                Dim x As New fr_deposito_form With {.StartPosition = FormStartPosition.Manual,
-                                                    .MdiParent = Me}
-                x.Show()
-                'With setup_menu
-                '    .ShowDialog()
-                '    .Focus()
-                'End With
+                With setup_menu
+                    .ShowDialog()
+                    .Focus()
+                End With
 
             Case "mn0101"
                 With data_kantor_pusat
@@ -113,26 +110,30 @@ Public Class MDIParent1
                     .Show()
                     .Focus()
                 End With
-            Case "mn0113"
+            Case "mn0114"
                 With master_perkiraan
                     .ShowDialog()
                     .Focus()
                 End With
-            Case "mn0114"
+            Case "mn0115"
                 With pengaturan_perkiraan
                     .ShowDialog()
                     .Focus()
                 End With
-            Case "mn0115"
+            Case "mn0116"
                 With setup_cetakan
                     .ShowDialog()
                     .Focus()
                 End With
-            Case "mn0116"
+            Case "mn0117"
                 With backup_restore
                     .ShowDialog()
                     .Focus()
                 End With
+            Case "mn0113"
+                'SETUP PRODUK DEPOSITO
+                Dim x = New fr_deposito_product_det With {.MdiParent = Me}
+                x.DoLoadForm(1, True)
 
             Case "mn020101"
                 With master_nasabah_perorangan
@@ -165,6 +166,13 @@ Public Class MDIParent1
                     .ShowDialog()
                     .Focus()
                 End With
+            Case "mn020401"
+                'LIST REKENING DEPOSITO
+                Dim x = New fr_deposito_list_form With {.MdiParent = Me, .StartPosition = FormStartPosition.Manual}
+                x.Show() : x.Focus()
+                'Dim x = New fr_deposito_detail
+                'x.DoLoadNew()
+
             Case "mn030101"
                 With transaksi__tabungan
                     .ShowDialog()
@@ -429,7 +437,7 @@ Public Class MDIParent1
         nama_lembaga.Text = rd.Item("kantor_nama_lembaga")
         rd.Close()
         Me.Text = nama_aplikasi
-        server_dan_database.Text = server.ToString + " (" + database + ")"
+        server_dan_database.Text = MainConnData.host + " (" + MainConnData.db + ")"
 
         ToolStrip2.BackColor = warna2
     End Sub

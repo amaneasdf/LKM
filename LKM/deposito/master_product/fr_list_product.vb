@@ -61,23 +61,23 @@
             dgv_list.DataSource = New DataTable
             'lbl_pageinfo.Text = String.Empty
 
-            Dim _datalist As New KeyValuePair(Of Boolean, DataTable)
-            Dim _datacount As New KeyValuePair(Of Boolean, Integer)
+            Dim _datalist = Await Task.Run(Function() GetDataListProduct(_typedata, Param, 0, 0))
+            'Dim _datacount = Await Task.Run(Function() GetDataCountForLog(_typedata, _startdate, _enddate, Param))
 
-            '_datalist = Await Task.Run(Function() GetDataListForLog(_typedata, _startdate, _enddate, Param, Page, _limitdata))
-            '_datacount = Await Task.Run(Function() GetDataCountForLog(_typedata, _startdate, _enddate, Param))
-
-            If _datalist.Key = True And _datacount.Key = True Then
+            If _datalist.Result = True Then
                 dgv_list.DataSource = _datalist.Value
-                DataCount = _datacount.Value
+                DataCount = _datalist.Value.Rows.Count
+                MaxPageData = 1
+                SelectedPageData = 1
 
-                MaxPageData = CInt(Math.Ceiling(DataCount / _limitdata))
-                SelectedPageData = Page
-                PageInfo = String.Format(PageInfo,
-                                         If(dgv_list.RowCount > 0, 1, 0) + (_limitdata * Page) - _limitdata,
-                                         dgv_list.RowCount + (_limitdata * Page) - _limitdata,
-                                         DataCount
-                                         )
+                'DataCount = _datacount.Value
+                'MaxPageData = CInt(Math.Ceiling(DataCount / _limitdata))
+                'SelectedPageData = Page
+                'PageInfo = String.Format(PageInfo,
+                '                         If(dgv_list.RowCount > 0, 1, 0) + (_limitdata * Page) - _limitdata,
+                '                         dgv_list.RowCount + (_limitdata * Page) - _limitdata,
+                '                         DataCount
+                '                         )
                 'lbl_pageinfo.Text = PageInfo
             Else
                 MaxPageData = 1

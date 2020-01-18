@@ -1,14 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class pencarian_master_tabungan
+    Public ReturnValue As String = ""
     Dim kode As String
     Dim sortcolumn As Integer = -1
 
     Private Sub pencarian_master_tabungan_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         tfilter.Focus()
-    End Sub
-
-    Private Sub pencarian_master_tabungan_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        Me.Dispose()
     End Sub
 
     Private Sub pencarian_master_tabungan_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown

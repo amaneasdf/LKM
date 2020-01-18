@@ -1,14 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class pencarian_master_nasabah
+    Public ReturnValue As String = ""
     Dim kode As String
     Dim sortcolumn As Integer = -1
 
     Private Sub pencarian_master_nasabah_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         tfilter.Focus()
-    End Sub
-
-    Private Sub pencarian_master_nasabah_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
-        Me.Dispose()
     End Sub
 
     Private Sub pencarian_master_nasabah_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -110,6 +107,8 @@ Public Class pencarian_master_nasabah
                 .tnasabah_id.Text = kode
                 .carinasabah()
             End With
+        Else
+            ReturnValue = kode
         End If
         Me.Close()
     End Sub

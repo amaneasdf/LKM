@@ -145,17 +145,65 @@
     <Compile Include="daftar_nasabah.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="deposito\fr_deposito_form.Designer.vb">
-      <DependentUpon>fr_deposito_form.vb</DependentUpon>
+    <Compile Include="deposito\transaction\fr_proses_harian.Designer.vb">
+      <DependentUpon>fr_proses_harian.vb</DependentUpon>
     </Compile>
-    <Compile Include="deposito\fr_deposito_form.vb">
+    <Compile Include="deposito\transaction\fr_proses_harian.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="deposito\fr_deposito_product.Designer.vb">
-      <DependentUpon>fr_deposito_product.vb</DependentUpon>
+    <Compile Include="deposito\master\fr_deposito_list_form.Designer.vb">
+      <DependentUpon>fr_deposito_list_form.vb</DependentUpon>
     </Compile>
-    <Compile Include="deposito\fr_deposito_product.vb">
+    <Compile Include="deposito\master\fr_deposito_list_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\master_product\fr_deposito_form.Designer.vb">
+      <DependentUpon>fr_deposito_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\master_product\fr_deposito_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\master_product\fr_list_product.Designer.vb">
+      <DependentUpon>fr_list_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\master_product\fr_list_product.vb">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="deposito\master_product\fr_deposito_product_det.Designer.vb">
+      <DependentUpon>fr_deposito_product_det.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\master_product\fr_deposito_product_det.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_detail.Designer.vb">
+      <DependentUpon>fr_deposito_detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_list.Designer.vb">
+      <DependentUpon>fr_deposito_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_list.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_pelengkap.Designer.vb">
+      <DependentUpon>fr_deposito_pelengkap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_pelengkap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_statement.Designer.vb">
+      <DependentUpon>fr_deposito_statement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\master\fr_deposito_statement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposito\transaction\fr_deposito_trans.Designer.vb">
+      <DependentUpon>fr_deposito_trans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposito\transaction\fr_deposito_trans.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
@@ -223,7 +271,8 @@
     <Compile Include="laporan_verbal_kas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="md5.vb" />
+    <Compile Include="module_class_other\class\MySqlThing.vb" />
+    <Compile Include="module_class_other\module\mdl_datalist.vb" />
     <Compile Include="module_class_other\module\mdl_function.vb" />
     <Compile Include="module_class_other\module\mdl_sysvar.vb" />
     <Compile Include="modul_terbilang.vb" />
@@ -808,11 +857,32 @@
     <EmbeddedResource Include="daftar_nasabah.resx">
       <DependentUpon>daftar_nasabah.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="deposito\fr_deposito_form.resx">
+    <EmbeddedResource Include="deposito\master\fr_deposito_list_form.resx">
+      <DependentUpon>fr_deposito_list_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\master_product\fr_deposito_form.resx">
       <DependentUpon>fr_deposito_form.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="deposito\fr_deposito_product.resx">
-      <DependentUpon>fr_deposito_product.vb</DependentUpon>
+    <EmbeddedResource Include="deposito\master_product\fr_deposito_product_det.resx">
+      <DependentUpon>fr_deposito_product_det.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\master_product\fr_list_product.resx">
+      <DependentUpon>fr_list_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\master\fr_deposito_detail.resx">
+      <DependentUpon>fr_deposito_detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\master\fr_deposito_list.resx">
+      <DependentUpon>fr_deposito_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\master\fr_deposito_pelengkap.resx">
+      <DependentUpon>fr_deposito_pelengkap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\transaction\fr_deposito_trans.resx">
+      <DependentUpon>fr_deposito_trans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposito\transaction\fr_proses_harian.resx">
+      <DependentUpon>fr_proses_harian.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
@@ -1326,7 +1396,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="deposito\report\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

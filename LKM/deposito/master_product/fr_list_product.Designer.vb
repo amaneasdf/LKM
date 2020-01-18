@@ -22,7 +22,6 @@ Partial Class fr_list_product
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_judul = New System.Windows.Forms.Label()
         Me.pnl_bottom = New System.Windows.Forms.Panel()
         Me.pnl_top = New System.Windows.Forms.Panel()
@@ -34,18 +33,6 @@ Partial Class fr_list_product
         Me.pnl_top.SuspendLayout()
         CType(Me.dgv_list, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Azure
-        Me.Panel1.BackgroundImage = Global.LKM.My.Resources.Resources.header4
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(909, 35)
-        Me.Panel1.TabIndex = 4
         '
         'lbl_judul
         '
@@ -79,7 +66,7 @@ Partial Class fr_list_product
         Me.pnl_top.Controls.Add(Me.btnkeluar)
         Me.pnl_top.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnl_top.Font = New System.Drawing.Font("Open Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnl_top.Location = New System.Drawing.Point(0, 35)
+        Me.pnl_top.Location = New System.Drawing.Point(0, 0)
         Me.pnl_top.Name = "pnl_top"
         Me.pnl_top.Size = New System.Drawing.Size(909, 50)
         Me.pnl_top.TabIndex = 6
@@ -177,21 +164,20 @@ Partial Class fr_list_product
         Me.dgv_list.BackgroundColor = System.Drawing.Color.White
         Me.dgv_list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_list.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_list.Location = New System.Drawing.Point(0, 85)
+        Me.dgv_list.Location = New System.Drawing.Point(0, 50)
         Me.dgv_list.Name = "dgv_list"
         Me.dgv_list.ReadOnly = True
-        Me.dgv_list.Size = New System.Drawing.Size(909, 412)
+        Me.dgv_list.Size = New System.Drawing.Size(909, 447)
         Me.dgv_list.TabIndex = 7
         '
-        'fr_deposito_product
+        'fr_list_product
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.dgv_list)
         Me.Controls.Add(Me.pnl_top)
         Me.Controls.Add(Me.pnl_bottom)
-        Me.Controls.Add(Me.Panel1)
-        Me.Name = "fr_deposito_product"
+        Me.Name = "fr_list_product"
         Me.Size = New System.Drawing.Size(909, 547)
         Me.pnl_top.ResumeLayout(False)
         Me.pnl_top.PerformLayout()
@@ -199,7 +185,6 @@ Partial Class fr_list_product
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lbl_judul As System.Windows.Forms.Label
     Friend WithEvents pnl_bottom As System.Windows.Forms.Panel
     Friend WithEvents pnl_top As System.Windows.Forms.Panel

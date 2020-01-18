@@ -113,6 +113,9 @@ Public Class login
             Exit Sub
         ElseIf data(4) = "1" Then
             With MDIParent1
+                LoggedUser.User_Alias = data(0)
+                LoggedUser.User_Nama = data(1)
+
                 .username.Text = data(0)
                 .nama_lengkap.Text = data(1)
                 .Label1.Text = data(3)

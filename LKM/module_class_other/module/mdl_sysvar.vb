@@ -121,7 +121,7 @@ Module mdl_sysvar
             End Try
         End Get
     End Property
-    'Public MainConnection As New MySqlThing
+    Public MainConnection As New MySqlThing
     Public MainConnData As New ConnectionData
 
     'USER DATA
@@ -156,6 +156,78 @@ Module mdl_sysvar
     'FONT
     Public OpenSans_Self As Boolean = False
     Public SourceSans_Self As Boolean = False
+
+    'DATATABLE FOR COMBOBOX
+    Public Function CBDatasource(ComboType As String) As DataTable
+        Dim dt As New DataTable : Dim q As String = ""
+        Dim _getTable() As String = {"deposito_jangka", "kode_pemilik", "kode_hubungan"}
+        Dim _setTable() As String = {"rekening_status", "deposito_perlakuan_pokok", "deposito_perlakuan_bunga", "deposito_perpanjang"}
+
+        ComboType = LCase(ComboType)
+
+        If _getTable.Contains(ComboType) Then
+            Using x = New MySqlThing(MainConnData.host, MainConnData.db, decryptString(MainConnData.uid), decryptString(MainConnData.pwd))
+                x.Open() : If x.ConnectionState = ConnectionState.Open Then
+                    Select Case ComboType
+                        Case "deposito_jangka"
+                            Dim _qtemp As New List(Of String)
+                            q = "SELECT produk_{1}bln 't', {0} Value, '{1} Bulan' Text FROM data_deposito_produk WHERE produk_id=1"
+                            For i = 1 To 12
+                                _qtemp.Add(String.Format(q, i, i))
+                            Next
+                            _qtemp.Add(String.Format(q, 24, 24))
+                            q = String.Format("SELECT Value, Text FROM({0}) produk WHERE t != 0",
+                                              String.Join(" UNION ALL ", _qtemp))
+
+                        Case "kode_pemilik"
+                            q = "SELECT combo_text 'Text', combo_kode 'Value' FROM kode_komponen WHERE combo_komponen=15 ORDER BY combo_kode"
+                        Case "kode_hubungan"
+                            q = "SELECT combo_text 'Text', combo_kode 'Value' FROM kode_komponen WHERE combo_komponen='06' ORDER BY combo_kode"
+                        Case Else : GoTo HardCodedRef
+                    End Select
+                    dt = x.GetDataTable(q)
+                End If
+            End Using
+
+        Else
+HardCodedRef:
+            dt.Columns.Add("Text", GetType(String))
+            dt.Columns.Add("Value", GetType(String))
+
+            If _setTable.Contains(ComboType) Then
+                Select Case ComboType
+                    Case "rekening_status"
+                        dt.Rows.Add("None", 0)
+                        dt.Rows.Add("Aktif", 1)
+                        dt.Rows.Add("Blokir", 2)
+                        dt.Rows.Add("Tutup", 3)
+                        dt.Rows.Add("Delete", 9)
+
+                    Case "deposito_perlakuan_pokok"
+                        dt.Rows.Add("Ambil Tunai", 1)
+                        dt.Rows.Add("Overbook ke Tabungan", 2)
+                        dt.Rows.Add("Rollover Simpanan", 3)
+                    Case "deposito_perlakuan_bunga"
+                        dt.Rows.Add("Jatuh Tempo", 1)
+                        dt.Rows.Add("Awal", 2)
+                    Case "deposito_perpanjang"
+                        dt.Rows.Add("No", 1)
+                        dt.Rows.Add("Perpanjang", 2)
+
+                    Case "trans_deposito"
+                        dt.Rows.Add("Setoran Pokok", "21.1")
+                        dt.Rows.Add("Setoran Pokok Dari Tabungan", "21.2")
+                        dt.Rows.Add("Pencairan Tunai", "22.1")
+                        dt.Rows.Add("Pencairan OB ke Tabungan", "22.2")
+                        dt.Rows.Add("Pencairan Bunga", "23.1")
+                        dt.Rows.Add("Pencairan Bunga OB ke Tabungan", "23.2")
+
+                End Select
+            End If
+        End If
+
+        Return dt
+    End Function
 
 
     'DATAGRID COLUMNS LIST
